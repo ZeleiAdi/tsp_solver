@@ -79,7 +79,7 @@ class Vertex
   end
 
   def print
-    edges.each do |edge|
+    @edges.each do |edge|
       edge.print
     end
   end

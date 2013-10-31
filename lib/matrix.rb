@@ -8,7 +8,7 @@ class Matrix
     @column_count = column_count
     @elements = []
 
-    row_count.times do   |row_index|
+    row_count.times do |row_index|
       @elements << []
       column_count.times do |column_index|
         self[row_index, column_index] = 0
@@ -21,13 +21,13 @@ class Matrix
   end
 
   def []= (row_index, column_index, element)
-    return if(row_index >= @row_count or column_index >= @column_count)
-    return if(row_index < 0 or column_index < 0)
+    return if (row_index >= @row_count or column_index >= @column_count)
+    return if (row_index < 0 or column_index < 0)
     @elements[row_index][column_index] = element
   end
 
   def print
-    row_count.times do   |row_index|
+    row_count.times do |row_index|
       puts @elements[row_index].join("\t")
     end
   end
