@@ -1,46 +1,50 @@
 module Graph
-	def random_vertex
+  def random_vertex
 
-	end
+  end
 
-	def nearest_vertex_to vertex
+  def nearest_vertex_to vertex
 
-	end
+  end
 
-	def nearest_unvisited_vertex_to vertex
+  def nearest_unvisited_vertex_to vertex
 
-	end
+  end
 
-	def shortest_edge
+  def shortest_edge
 
-	end
+  end
 
-	def shortest_utravelled_edge
+  def shortest_utravelled_edge
 
-	end
+  end
 
-	def shortest_edge_of vertex
+  def shortest_edge_of vertex
 
-	end
+  end
 
-	def number_of_remaining_unvisited_vertices
+  def number_of_remaining_unvisited_vertices
 
-	end
+  end
 
-	def sort_edges
+  def sort_edges
 
-	end
+  end
 
-	#array for one cycle
-	def search_for_cycle
+  #array for one cycle
+  def search_for_cycle
 
-	end
+  end
 
-	def build_minimal_spanning_tree
+  def build_minimal_spanning_tree
 
-	end
+  end
 
-	def search_for_triangle
+  def search_for_triangle
 
-	end
+  end
+
+  def print
+
+  end
 end

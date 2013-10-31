@@ -4,64 +4,62 @@ require_relative 'vertex'
 
 class AdjacencyListGraph
 
-	include Graph
+  include Graph
 
-	@start_vertex
-	@vertices
+  @start_vertex
+  @vertices
 
-	def initialize number_of_vertices, average_degree
-		@vertices = []
-		number_of_vertices.times do
-			@vertices << Vertex.new
-		end
+  def initialize number_of_vertices
+    @vertices = []
+  end
 
-		@vertices.each do |vertex|
+  def << (vertex)
+    @vertices << vertex
+  end
 
-		end
-		(number_of_vertices * average_degree).times do |iterator|
+  def random_vertex
+  end
 
-			@vertices[iterator].bind rand(0...iterator), rand(1..50)
-		end
+  def nearest_vertex_to vertex
+  end
 
-	end
+  def nearest_unvisited_vertex_to vertex
+  end
 
-	def random_vertex
-	end
+  def shortest_edge
+  end
 
-	def nearest_vertex_to vertex
-	end
+  def shortest_untravelled_edge
+  end
 
-	def nearest_unvisited_vertex_to vertex
-	end
+  def shortest_edge_of vertex
+    vertex.sortest_edge
+  end
 
-	def shortest_edge 
-	end
+  def number_of_remaining_unvisited_vertices
 
-	def shortest_utravelled_edge
-	end
+  end
 
-	def shortest_edge_of vertex
-		vertex.sortest_edge
-	end
+  def sort_edges
 
-	def number_of_remaining_unvisited_vertices
+  end
 
-	end
+  #array for one cycle
+  def search_for_cycle
 
-	def sort_edges
+  end
 
-	end
+  def build_minimal_spanning_tree
 
-	#array for one cycle
-	def search_for_cycle
+  end
 
-	end
+  def search_for_triangle
 
-	def build_minimal_spanning_tree
+  end
 
-	end
-
-	def search_for_triangle
-
-	end
+  def print
+    @vertices.each do |vertex|
+      vertex.print
+    end
+  end
 end
