@@ -17,7 +17,7 @@ module GraphFactory
   def self.fill_matrix (matrix)
     matrix.row_count.times do |row_index|
       row_index.times do |column_index|
-        if (rand(0..1) == 1)
+        if (rand(0...10) < 3)
           matrix[column_index, row_index] = matrix[row_index, column_index] = rand(1..50)
         end
       end
@@ -25,7 +25,7 @@ module GraphFactory
   end
 
   def self.transform_matrix_into_graph (matrix)
-    graph = AdjacencyListGraph.new (matrix.row_count)
+    graph = AdjacencyListGraph.new
     vertices = []
 
     matrix.row_count.times { vertices << Vertex.new }
@@ -37,14 +37,9 @@ module GraphFactory
         end
       end
     end
-    vertices
+    vertices.each do |vertex|
+      graph.add_vertex vertex
+    end
+    graph
   end
-end
-
-matrix = Matrix.new(5, 5)
-GraphFactory::fill_matrix(matrix)
-matrix.print
-vertices = GraphFactory::transform_matrix_into_graph(matrix)
-vertices.each do |vertex|
-  vertex.print
 end

@@ -5,17 +5,19 @@
     <ignored path="tsp_solver.iws" />
     <ignored path=".idea/workspace.xml" />
     <file path="/vertex_spec.rb" changelist="53cf2226-1c97-4206-9159-17a30b4fc670" time="1382702640624" ignored="false" />
-    <file path="/vertex.rb" changelist="53cf2226-1c97-4206-9159-17a30b4fc670" time="1383145284306" ignored="false" />
+    <file path="/vertex.rb" changelist="53cf2226-1c97-4206-9159-17a30b4fc670" time="1385127787360" ignored="false" />
     <file path="/edge.rb" changelist="53cf2226-1c97-4206-9159-17a30b4fc670" time="1383145449693" ignored="false" />
-    <file path="/adjacencylistgraph.rb" changelist="53cf2226-1c97-4206-9159-17a30b4fc670" time="1383145132642" ignored="false" />
+    <file path="/adjacencylistgraph.rb" changelist="53cf2226-1c97-4206-9159-17a30b4fc670" time="1385129178495" ignored="false" />
     <file path="/greedy.rb" changelist="53cf2226-1c97-4206-9159-17a30b4fc670" time="1383138313277" ignored="false" />
     <file path="/sadfs.rb" changelist="53cf2226-1c97-4206-9159-17a30b4fc670" time="1382704284607" ignored="false" />
     <file path="/greedy_spec.rb" changelist="53cf2226-1c97-4206-9159-17a30b4fc670" time="1382704572418" ignored="false" />
-    <file path="/Dummy.txt" changelist="53cf2226-1c97-4206-9159-17a30b4fc670" time="1383219115597" ignored="false" />
-    <file path="/graphfactory.rb" changelist="53cf2226-1c97-4206-9159-17a30b4fc670" time="1383219971545" ignored="false" />
+    <file path="/Dummy.txt" changelist="53cf2226-1c97-4206-9159-17a30b4fc670" time="1385126882857" ignored="false" />
+    <file path="/graphfactory.rb" changelist="53cf2226-1c97-4206-9159-17a30b4fc670" time="1385129456471" ignored="false" />
     <file path="/matrix_spec.rb" changelist="53cf2226-1c97-4206-9159-17a30b4fc670" time="1383141246150" ignored="false" />
     <file path="/matrix.rb" changelist="53cf2226-1c97-4206-9159-17a30b4fc670" time="1383143645948" ignored="false" />
     <file path="/graph.rb" changelist="53cf2226-1c97-4206-9159-17a30b4fc670" time="1383145077632" ignored="false" />
+    <file path="/adjacencylistgraph_spec.rb" changelist="53cf2226-1c97-4206-9159-17a30b4fc670" time="1385127844956" ignored="false" />
+    <file path="/graphfactory_spec.rb" changelist="53cf2226-1c97-4206-9159-17a30b4fc670" time="1385129671867" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -35,28 +37,19 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="graphfactory.rb" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/lib/graphfactory.rb">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="44" column="39" selection-start="1193" selection-end="1193" vertical-scroll-proportion="0.7322835">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="graph.rb" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/lib/graph.rb">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="46" column="4" selection-start="446" selection-end="446" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="matrix.rb" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/lib/matrix.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="28" column="11" selection-start="729" selection-end="729" vertical-scroll-proportion="0.0">
+            <state line="16" column="10" selection-start="411" selection-end="411" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="greedy.rb" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/lib/greedy.rb">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -71,19 +64,37 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="vertex.rb" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/lib/vertex.rb">
+      <file leaf-file-name="matrix_spec.rb" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/spec/matrix_spec.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="81" column="5" selection-start="1151" selection-end="1151" vertical-scroll-proportion="0.0">
+            <state line="13" column="20" selection-start="384" selection-end="384" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="matrix_spec.rb" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/spec/matrix_spec.rb">
+      <file leaf-file-name="graphfactory_spec.rb" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/spec/graphfactory_spec.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="13" column="20" selection-start="383" selection-end="383" vertical-scroll-proportion="0.0">
+            <state line="15" column="50" selection-start="467" selection-end="467" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="graphfactory.rb" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/lib/graphfactory.rb">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="44" column="0" selection-start="1176" selection-end="1176" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="vertex.rb" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/lib/vertex.rb">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="54" column="58" selection-start="744" selection-end="744" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -92,7 +103,16 @@
       <file leaf-file-name="adjacencylistgraph.rb" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/lib/adjacencylistgraph.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="60" column="15" selection-start="716" selection-end="716" vertical-scroll-proportion="0.0">
+            <state line="20" column="38" selection-start="280" selection-end="280" vertical-scroll-proportion="-0.68">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="adjacencylistgraph_spec.rb" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/spec/adjacencylistgraph_spec.rb">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="25" column="4" selection-start="670" selection-end="670" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -124,9 +144,11 @@
         <option value="$PROJECT_DIR$/spec/matrix_spec.rb" />
         <option value="$PROJECT_DIR$/lib/matrix.rb" />
         <option value="$PROJECT_DIR$/lib/graph.rb" />
-        <option value="$PROJECT_DIR$/lib/adjacencylistgraph.rb" />
         <option value="$PROJECT_DIR$/lib/edge.rb" />
         <option value="$PROJECT_DIR$/lib/vertex.rb" />
+        <option value="$PROJECT_DIR$/spec/adjacencylistgraph_spec.rb" />
+        <option value="$PROJECT_DIR$/lib/adjacencylistgraph.rb" />
+        <option value="$PROJECT_DIR$/spec/graphfactory_spec.rb" />
         <option value="$PROJECT_DIR$/lib/graphfactory.rb" />
       </list>
     </option>
@@ -263,13 +285,13 @@
   <component name="PropertiesComponent">
     <property name="options.splitter.main.proportions" value="0.3" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="options.lastSelected" value="editor.preferences.appearance" />
     <property name="recentsLimit" value="5" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/lib/matrix_spec.rb" />
+    <property name="options.lastSelected" value="editor.preferences.appearance" />
     <property name="restartRequiresConfirmation" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/spec/graphfactory_spec.rb" />
     <property name="FullScreen" value="false" />
-    <property name="options.searchVisible" value="true" />
     <property name="options.splitter.details.proportions" value="0.2" />
+    <property name="options.searchVisible" value="true" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
@@ -277,7 +299,7 @@
       <recent name="$PROJECT_DIR$/lib" />
     </key>
   </component>
-  <component name="RunManager" selected="Ruby.GraphFactory">
+  <component name="RunManager" selected="RSpec.GraphFactory">
     <configuration default="false" name="Vertex " type="RSpecRunConfigurationType" factoryName="RSpec" temporary="true">
       <predefined_log_file id="RUBY_RSPEC" enabled="true" />
       <module name="tsp_solver" />
@@ -457,6 +479,70 @@
       <ConfigurationWrapper RunnerId="RubyRunner" />
       <method />
     </configuration>
+    <configuration default="false" name="AdjacencyListGraph" type="RSpecRunConfigurationType" factoryName="RSpec">
+      <predefined_log_file id="RUBY_RSPEC" enabled="true" />
+      <module name="tsp_solver" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="RUBY_ARGS" VALUE="-e $stdout.sync=true;$stderr.sync=true;load($0=ARGV.shift)" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="WORK DIR" VALUE="" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="SHOULD_USE_SDK" VALUE="true" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="ALTERN_SDK_NAME" VALUE="jruby-1.7.5-p392" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="myPassParentEnvs" VALUE="true" />
+      <envs />
+      <EXTENSION ID="BundlerRunConfigurationExtension" bundleExecEnabled="false" />
+      <EXTENSION ID="JRubyRunConfigurationExtension" />
+      <EXTENSION ID="RubyCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" track_test_folders="true" runner="rcov">
+        <COVERAGE_PATTERN ENABLED="true">
+          <PATTERN REGEXPS="/.rvm/" INCLUDED="false" />
+        </COVERAGE_PATTERN>
+      </EXTENSION>
+      <EXTENSION ID="org.jetbrains.plugins.ruby.motion.run.MotionSimulatorRunExtension" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="TESTS_FOLDER_PATH" VALUE="" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="TEST_SCRIPT_PATH" VALUE="$PROJECT_DIR$/spec/adjacencylistgraph_spec.rb" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="SPEC_RUNNER_PATH" VALUE="" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="TEST_FILE_MASK" VALUE="**/*_spec.rb" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="SPEC_EXAMPLE_NAME" VALUE="" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="TEST_TEST_TYPE" VALUE="TEST_SCRIPT" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="SPEC_ARGS" VALUE="" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="RUNNER_VERSION" VALUE="" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="USE_CUSTOM_SPEC_RUNNER" VALUE="false" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="DRB" VALUE="false" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="FULL_BACKTRACE" VALUE="false" />
+      <RunnerSettings RunnerId="RubyRunner" />
+      <ConfigurationWrapper RunnerId="RubyRunner" />
+      <method />
+    </configuration>
+    <configuration default="false" name="GraphFactory" type="RSpecRunConfigurationType" factoryName="RSpec">
+      <predefined_log_file id="RUBY_RSPEC" enabled="true" />
+      <module name="tsp_solver" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="RUBY_ARGS" VALUE="-e $stdout.sync=true;$stderr.sync=true;load($0=ARGV.shift)" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="WORK DIR" VALUE="" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="SHOULD_USE_SDK" VALUE="true" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="ALTERN_SDK_NAME" VALUE="jruby-1.7.5-p392" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="myPassParentEnvs" VALUE="true" />
+      <envs />
+      <EXTENSION ID="BundlerRunConfigurationExtension" bundleExecEnabled="false" />
+      <EXTENSION ID="JRubyRunConfigurationExtension" />
+      <EXTENSION ID="RubyCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" track_test_folders="true" runner="rcov">
+        <COVERAGE_PATTERN ENABLED="true">
+          <PATTERN REGEXPS="/.rvm/" INCLUDED="false" />
+        </COVERAGE_PATTERN>
+      </EXTENSION>
+      <EXTENSION ID="org.jetbrains.plugins.ruby.motion.run.MotionSimulatorRunExtension" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="TESTS_FOLDER_PATH" VALUE="" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="TEST_SCRIPT_PATH" VALUE="$PROJECT_DIR$/spec/graphfactory_spec.rb" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="SPEC_RUNNER_PATH" VALUE="" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="TEST_FILE_MASK" VALUE="**/*_spec.rb" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="SPEC_EXAMPLE_NAME" VALUE="" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="TEST_TEST_TYPE" VALUE="TEST_SCRIPT" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="SPEC_ARGS" VALUE="" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="RUNNER_VERSION" VALUE="" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="USE_CUSTOM_SPEC_RUNNER" VALUE="false" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="DRB" VALUE="false" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="FULL_BACKTRACE" VALUE="false" />
+      <RunnerSettings RunnerId="RubyRunner" />
+      <ConfigurationWrapper RunnerId="RubyRunner" />
+      <method />
+    </configuration>
     <configuration default="false" name="GraphFactory" type="RubyRunConfigurationType" factoryName="Ruby">
       <module name="tsp_solver" />
       <RUBY_RUN_CONFIG NAME="RUBY_ARGS" VALUE="-e $stdout.sync=true;$stderr.sync=true;load($0=ARGV.shift)" />
@@ -481,10 +567,12 @@
       <ConfigurationWrapper RunnerId="RubyRunner" />
       <method />
     </configuration>
-    <list size="3">
-      <item index="0" class="java.lang.String" itemvalue="RSpec.Vertex " />
-      <item index="1" class="java.lang.String" itemvalue="RSpec.Matrix" />
-      <item index="2" class="java.lang.String" itemvalue="Ruby.GraphFactory" />
+    <list size="5">
+      <item index="0" class="java.lang.String" itemvalue="RSpec.Matrix" />
+      <item index="1" class="java.lang.String" itemvalue="RSpec.AdjacencyListGraph" />
+      <item index="2" class="java.lang.String" itemvalue="RSpec.GraphFactory" />
+      <item index="3" class="java.lang.String" itemvalue="RSpec.Vertex " />
+      <item index="4" class="java.lang.String" itemvalue="Ruby.GraphFactory" />
     </list>
     <recent_temporary>
       <list size="1">
@@ -546,11 +634,11 @@
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3294893" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.2621212" sideWeight="0.6705107" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.27575758" sideWeight="0.6705107" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3970346" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.3294893" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.3294893" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.3294893" sideWeight="0.18939394" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.3294893" sideWeight="0.81060606" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -622,20 +710,6 @@
     <breakpoint-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/lib/vertex.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="15" column="18" selection-start="174" selection-end="174" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/lib/edge.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="23" column="29" selection-start="330" selection-end="330" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/lib/adjacencylistgraph.rb">
       <provider selected="true" editor-type-id="text-editor">
         <state line="39" column="31" selection-start="592" selection-end="592" vertical-scroll-proportion="0.0">
@@ -668,13 +742,6 @@
         <state line="8" column="69" selection-start="236" selection-end="236" vertical-scroll-proportion="0.35695538" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/lib/greedy.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/lib/graph.rb">
       <provider selected="true" editor-type-id="text-editor">
         <state line="46" column="4" selection-start="446" selection-end="446" vertical-scroll-proportion="0.0">
@@ -682,23 +749,44 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/spec/matrix_spec.rb">
+    <entry file="file://$PROJECT_DIR$/lib/vertex.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="13" column="20" selection-start="383" selection-end="383" vertical-scroll-proportion="0.0">
+        <state line="54" column="58" selection-start="744" selection-end="744" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/lib/adjacencylistgraph.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="60" column="15" selection-start="716" selection-end="716" vertical-scroll-proportion="0.0">
+        <state line="20" column="38" selection-start="280" selection-end="280" vertical-scroll-proportion="-0.68">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/lib/vertex.rb">
+    <entry file="file://$PROJECT_DIR$/spec/adjacencylistgraph_spec.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="81" column="5" selection-start="1151" selection-end="1151" vertical-scroll-proportion="0.0">
+        <state line="25" column="4" selection-start="670" selection-end="670" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lib/graphfactory.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="44" column="0" selection-start="1176" selection-end="1176" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/spec/graphfactory_spec.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="15" column="50" selection-start="467" selection-end="467" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/spec/matrix_spec.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="13" column="20" selection-start="384" selection-end="384" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
@@ -712,14 +800,14 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/lib/matrix.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="28" column="11" selection-start="729" selection-end="729" vertical-scroll-proportion="0.0">
+        <state line="16" column="10" selection-start="411" selection-end="411" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/lib/graphfactory.rb">
+    <entry file="file://$PROJECT_DIR$/lib/greedy.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="44" column="39" selection-start="1193" selection-end="1193" vertical-scroll-proportion="0.7322835">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>

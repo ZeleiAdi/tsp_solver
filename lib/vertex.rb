@@ -33,6 +33,13 @@ class Vertex
     @flags = [Flag.new, Flag.new]
   end
 
+
+  def neighbors
+    @edges.map do |edge|
+      edge.get_pair(self)
+    end
+  end
+
   def degree
     @edges.size
   end
@@ -56,10 +63,17 @@ class Vertex
     @edges << edge
   end
 
+  def visit
+    @visited = true
+  end
+
+  def unvisit
+    @visited = false
+  end
+
   def visited?
     @visited
   end
-
 
   def shortest_edge
     min_weight = 0

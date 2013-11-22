@@ -9,7 +9,7 @@ class AdjacencyListGraph
   @start_vertex
   @vertices
 
-  def initialize number_of_vertices
+  def initialize
     @vertices = []
   end
 
@@ -18,6 +18,7 @@ class AdjacencyListGraph
   end
 
   def random_vertex
+    @vertices[rand(0...@vertices.size)]
   end
 
   def nearest_vertex_to vertex
@@ -30,6 +31,10 @@ class AdjacencyListGraph
   end
 
   def shortest_untravelled_edge
+  end
+
+  def add_vertex vertex
+    @vertices << vertex
   end
 
   def shortest_edge_of vertex
@@ -55,6 +60,32 @@ class AdjacencyListGraph
 
   def search_for_triangle
 
+  end
+
+  def breadth_first_search(vertex)
+    vertex.visit
+    vertex.neighbors.each do |vertex|
+      unless vertex.visited?
+        vertex.visit
+        breadth_first_search vertex
+      end
+    end
+  end
+
+  def connected?
+    breadth_first_search(@vertices[0])
+    @vertices.each do |vertex|
+      unless vertex.visited?
+        return false
+      end
+    end
+    return true
+  end
+
+  def clear_visit
+    @vertices.each do |vertex|
+      vertex.unvisit
+    end
   end
 
   def print
