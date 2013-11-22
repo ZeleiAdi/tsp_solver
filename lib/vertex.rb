@@ -40,6 +40,22 @@ class Vertex
     end
   end
 
+  def nearest_unvisited_neighbor
+    min_edge_weight = 1000
+
+    nearest_neighbor = nil
+    @edges.each do |edge|
+      pair = edge.get_pair(self)
+      unless pair.visited?
+        if edge.weight < min_edge_weight
+          min_edge_weight
+          nearest_neighbor = pair
+        end
+      end
+    end
+    nearest_neighbor
+  end
+
   def degree
     @edges.size
   end

@@ -21,6 +21,7 @@ class AdjacencyListGraph
     @vertices[rand(0...@vertices.size)]
   end
 
+
   def nearest_vertex_to vertex
   end
 

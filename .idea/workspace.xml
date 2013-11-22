@@ -5,9 +5,9 @@
     <ignored path="tsp_solver.iws" />
     <ignored path=".idea/workspace.xml" />
     <file path="/vertex_spec.rb" changelist="53cf2226-1c97-4206-9159-17a30b4fc670" time="1382702640624" ignored="false" />
-    <file path="/vertex.rb" changelist="53cf2226-1c97-4206-9159-17a30b4fc670" time="1385127787360" ignored="false" />
+    <file path="/vertex.rb" changelist="53cf2226-1c97-4206-9159-17a30b4fc670" time="1385131480136" ignored="false" />
     <file path="/edge.rb" changelist="53cf2226-1c97-4206-9159-17a30b4fc670" time="1383145449693" ignored="false" />
-    <file path="/adjacencylistgraph.rb" changelist="53cf2226-1c97-4206-9159-17a30b4fc670" time="1385129178495" ignored="false" />
+    <file path="/adjacencylistgraph.rb" changelist="53cf2226-1c97-4206-9159-17a30b4fc670" time="1385130862732" ignored="false" />
     <file path="/greedy.rb" changelist="53cf2226-1c97-4206-9159-17a30b4fc670" time="1383138313277" ignored="false" />
     <file path="/sadfs.rb" changelist="53cf2226-1c97-4206-9159-17a30b4fc670" time="1382704284607" ignored="false" />
     <file path="/greedy_spec.rb" changelist="53cf2226-1c97-4206-9159-17a30b4fc670" time="1382704572418" ignored="false" />
@@ -18,6 +18,7 @@
     <file path="/graph.rb" changelist="53cf2226-1c97-4206-9159-17a30b4fc670" time="1383145077632" ignored="false" />
     <file path="/adjacencylistgraph_spec.rb" changelist="53cf2226-1c97-4206-9159-17a30b4fc670" time="1385127844956" ignored="false" />
     <file path="/graphfactory_spec.rb" changelist="53cf2226-1c97-4206-9159-17a30b4fc670" time="1385129671867" ignored="false" />
+    <file path="/nearest_neighbor.rb" changelist="53cf2226-1c97-4206-9159-17a30b4fc670" time="1385132275113" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -46,10 +47,28 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="greedy.rb" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="greedy.rb" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/lib/greedy.rb">
           <provider selected="true" editor-type-id="text-editor">
             <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="nearest_neighbor.rb" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/lib/nearest_neighbor.rb">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="18" column="14" selection-start="401" selection-end="420" vertical-scroll-proportion="0.55833334">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="adjacencylistgraph.rb" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/lib/adjacencylistgraph.rb">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="23" column="0" selection-start="289" selection-end="289" vertical-scroll-proportion="-12.4">
               <folding />
             </state>
           </provider>
@@ -94,16 +113,7 @@
       <file leaf-file-name="vertex.rb" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/lib/vertex.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="54" column="58" selection-start="744" selection-end="744" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="adjacencylistgraph.rb" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/lib/adjacencylistgraph.rb">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="20" column="38" selection-start="280" selection-end="280" vertical-scroll-proportion="-0.68">
+            <state line="55" column="20" selection-start="816" selection-end="816" vertical-scroll-proportion="-9.36">
               <folding />
             </state>
           </provider>
@@ -145,11 +155,12 @@
         <option value="$PROJECT_DIR$/lib/matrix.rb" />
         <option value="$PROJECT_DIR$/lib/graph.rb" />
         <option value="$PROJECT_DIR$/lib/edge.rb" />
-        <option value="$PROJECT_DIR$/lib/vertex.rb" />
         <option value="$PROJECT_DIR$/spec/adjacencylistgraph_spec.rb" />
-        <option value="$PROJECT_DIR$/lib/adjacencylistgraph.rb" />
         <option value="$PROJECT_DIR$/spec/graphfactory_spec.rb" />
         <option value="$PROJECT_DIR$/lib/graphfactory.rb" />
+        <option value="$PROJECT_DIR$/lib/adjacencylistgraph.rb" />
+        <option value="$PROJECT_DIR$/lib/vertex.rb" />
+        <option value="$PROJECT_DIR$/lib/nearest_neighbor.rb" />
       </list>
     </option>
   </component>
@@ -627,7 +638,7 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1382" height="744" extended-state="7" />
+    <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -638,7 +649,7 @@
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3970346" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.3294893" sideWeight="0.18939394" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.3294893" sideWeight="0.81060606" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3294893" sideWeight="0.81060606" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -710,13 +721,6 @@
     <breakpoint-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/lib/adjacencylistgraph.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="39" column="31" selection-start="592" selection-end="592" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/spec/vertex_spec.rb">
       <provider selected="true" editor-type-id="text-editor">
         <state line="8" column="10" selection-start="145" selection-end="145" vertical-scroll-proportion="0.0" />
@@ -749,44 +753,9 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/lib/vertex.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="54" column="58" selection-start="744" selection-end="744" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/lib/adjacencylistgraph.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="20" column="38" selection-start="280" selection-end="280" vertical-scroll-proportion="-0.68">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/spec/adjacencylistgraph_spec.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="25" column="4" selection-start="670" selection-end="670" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/lib/graphfactory.rb">
       <provider selected="true" editor-type-id="text-editor">
         <state line="44" column="0" selection-start="1176" selection-end="1176" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/spec/graphfactory_spec.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="15" column="50" selection-start="467" selection-end="467" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/spec/matrix_spec.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="13" column="20" selection-start="384" selection-end="384" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
@@ -808,6 +777,48 @@
     <entry file="file://$PROJECT_DIR$/lib/greedy.rb">
       <provider selected="true" editor-type-id="text-editor">
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/spec/adjacencylistgraph_spec.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="25" column="4" selection-start="670" selection-end="670" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/spec/graphfactory_spec.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="15" column="50" selection-start="467" selection-end="467" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/spec/matrix_spec.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="13" column="20" selection-start="384" selection-end="384" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lib/vertex.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="55" column="20" selection-start="816" selection-end="816" vertical-scroll-proportion="-9.36">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lib/adjacencylistgraph.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="23" column="0" selection-start="289" selection-end="289" vertical-scroll-proportion="-12.4">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lib/nearest_neighbor.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="18" column="14" selection-start="401" selection-end="420" vertical-scroll-proportion="0.55833334">
           <folding />
         </state>
       </provider>
