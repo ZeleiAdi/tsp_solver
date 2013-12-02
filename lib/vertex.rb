@@ -20,19 +20,19 @@ class Flag
   end
 end
 
-
 class Vertex
   @edges
   @visited
-
-  attr_accessor :flags
+  @@id_incr = 1
+  attr_accessor :id
 
   def initialize
+    @id = @@id_incr
+    @@id_incr += 1
     @edges = []
     @visited = false
     @flags = [Flag.new, Flag.new]
   end
-
 
   def neighbors
     @edges.map do |edge|
@@ -54,6 +54,20 @@ class Vertex
       end
     end
     nearest_neighbor
+  end
+
+  def ordered_unvisited_neighbors
+    sorted_edges = @edges.sort_by do |edge|
+      edge.weight
+    end
+    sorted_unvisited_vertices = []
+    sorted_edges.each do |edge|
+      pair = edge.get_pair(self)
+      unless pair.visited?
+        sorted_unvisited_vertices << pair
+      end
+    end
+    sorted_unvisited_vertices
   end
 
   def degree

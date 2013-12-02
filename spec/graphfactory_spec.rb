@@ -21,4 +21,7 @@ describe 'My behaviour' do
     expect(counter).to be > 4
     puts counter
   end
+  it 'should generate a graph' do
+    adj = GraphFactory.generate_graph(10).print
+  end
 end

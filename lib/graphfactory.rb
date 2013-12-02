@@ -11,7 +11,12 @@ module GraphFactory
     #  when graph_type == :adjacencylistgraph
     #    AdjacencyListGraph.new 5, 2
     #end
+  end
 
+  def self.generate_graph(number_of_vertices)
+    matrix = Matrix.new(number_of_vertices, number_of_vertices)
+    fill_matrix matrix
+    alg = transform_matrix_into_graph matrix
   end
 
   def self.fill_matrix (matrix)

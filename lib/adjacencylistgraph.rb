@@ -4,9 +4,6 @@ require_relative 'vertex'
 
 class AdjacencyListGraph
 
-  include Graph
-
-  @start_vertex
   @vertices
 
   def initialize
@@ -21,46 +18,12 @@ class AdjacencyListGraph
     @vertices[rand(0...@vertices.size)]
   end
 
-
-  def nearest_vertex_to vertex
-  end
-
-  def nearest_unvisited_vertex_to vertex
-  end
-
-  def shortest_edge
-  end
-
-  def shortest_untravelled_edge
-  end
-
   def add_vertex vertex
     @vertices << vertex
   end
 
   def shortest_edge_of vertex
     vertex.sortest_edge
-  end
-
-  def number_of_remaining_unvisited_vertices
-
-  end
-
-  def sort_edges
-
-  end
-
-  #array for one cycle
-  def search_for_cycle
-
-  end
-
-  def build_minimal_spanning_tree
-
-  end
-
-  def search_for_triangle
-
   end
 
   def breadth_first_search(vertex)
@@ -71,6 +34,24 @@ class AdjacencyListGraph
         breadth_first_search vertex
       end
     end
+  end
+
+  def all_vertices_visited_except start
+    @vertices.each do |vertex|
+      if ((vertex != start) && (vertex.visited? == false))
+          return false
+        end
+      end
+    return true
+  end
+
+  def all_vertices_visited?
+    @vertices.each do |vertex|
+      unless vertex.visited?
+        return false
+      end
+    end
+    return true
   end
 
   def connected?
