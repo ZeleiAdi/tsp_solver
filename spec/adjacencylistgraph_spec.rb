@@ -1,7 +1,8 @@
 require 'rspec'
 require_relative '../lib/adjacencylistgraph'
-require_relative '../lib/vertex'
+require_relative '../lib/graphfactory'
 require_relative '../lib/matrix'
+require_relative '../lib/vertex'
 
 describe 'AdjacencyListGraph' do
 
@@ -62,6 +63,17 @@ describe 'AdjacencyListGraph' do
     alg = AdjacencyListGraph.new
     spanning_tree = alg.build_minimal_spanning_tree matrix
     spanning_tree.print
+    puts ''
   end
 
+  it 'should return a minimum spanning tree from a random graph' do
+    matrix = GraphFactory.create_graph_in_matrix_form 10
+    alg = AdjacencyListGraph.new
+    spanning_tree = alg.build_minimal_spanning_tree matrix
+    spanning_tree.print
+
+    graph = GraphFactory.transform_matrix_into_graph spanning_tree
+    graph.breadth_first_search graph.random_vertex
+    expect(graph.connected?).to be true
+  end
 end

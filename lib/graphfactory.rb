@@ -1,16 +1,15 @@
 require_relative 'adjacencylistgraph.rb'
 require_relative 'matrix'
 
-puts "hello"
-
 module GraphFactory
   def self.create_graph_with(number_of_vertices, graph_type)
     matrix = Matrix.new(number_of_vertices, number_of_vertices)
-    #
-    #case
-    #  when graph_type == :adjacencylistgraph
-    #    AdjacencyListGraph.new 5, 2
-    #end
+  end
+
+  def self.create_graph_in_matrix_form(number_of_vertices)
+    matrix = Matrix.new(number_of_vertices, number_of_vertices)
+    fill_matrix matrix
+    matrix
   end
 
   def self.generate_graph(number_of_vertices)

@@ -140,5 +140,6 @@ class AdjacencyListGraph
         end
       end
     end
+    spanning_tree
   end
 end
