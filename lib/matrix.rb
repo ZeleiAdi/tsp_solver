@@ -26,6 +26,12 @@ class Matrix
     @elements[row_index][column_index] = element
   end
 
+  def define_row (row_index, values)
+    column_count.times do |column_index|
+      @elements[row_index] = values
+    end
+  end
+
   def print
     row_count.times do |row_index|
       puts @elements[row_index].join("\t")

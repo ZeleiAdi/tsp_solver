@@ -33,7 +33,11 @@ module GraphFactory
     graph = AdjacencyListGraph.new
     vertices = []
 
-    matrix.row_count.times { vertices << Vertex.new }
+    matrix.row_count.times do |index|
+      vertex = Vertex.new
+      vertex.id = index
+      vertices << vertex
+    end
     matrix.row_count.times do |row_index|
       vertex = Vertex.new
       matrix.row_count.times do |column_index|
@@ -46,5 +50,9 @@ module GraphFactory
       graph.add_vertex vertex
     end
     graph
+  end
+
+  def transform_vertices_into_matrix vertices
+
   end
 end

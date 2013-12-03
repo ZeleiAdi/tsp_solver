@@ -1,6 +1,7 @@
 require 'rspec'
 require_relative '../lib/adjacencylistgraph'
 require_relative '../lib/vertex'
+require_relative '../lib/matrix'
 
 describe 'AdjacencyListGraph' do
 
@@ -43,6 +44,24 @@ describe 'AdjacencyListGraph' do
     vertex3.visit
     vertex4.visit
     expect(alg.all_vertices_visited_except vertex1).to be true
+  end
+
+  it 'should return a minimum spanning tree in matrix form' do
+    matrix = Matrix.new 5,5
+    row0 = [0,1,2,7,0]
+    row1 = [1,0,5,0,6]
+    row2 = [2,5,0,8,3]
+    row3 = [7,0,8,0,4]
+    row4 = [0,6,3,4,0]
+    matrix.define_row 0, row0
+    matrix.define_row 1, row1
+    matrix.define_row 2, row2
+    matrix.define_row 3, row3
+    matrix.define_row 4, row4
+
+    alg = AdjacencyListGraph.new
+    spanning_tree = alg.build_minimal_spanning_tree matrix
+    spanning_tree.print
   end
 
 end
