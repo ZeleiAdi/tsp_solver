@@ -76,11 +76,11 @@ class AdjacencyListGraph
     end
   end
 
-
   #notes
   #nearest neighbor of a city will only be infinity if it has been added to the spanning tree
   #it is not fortunate, but when c[i,j] has a value of 0, it means there is no edge between i and j
   #   therefore zero value has to be checked for
+  #might return with nil
   def build_minimal_spanning_tree matrix
     infinity = 1000
 
@@ -140,6 +140,18 @@ class AdjacencyListGraph
         end
       end
     end
-    spanning_tree
+    edge_count = 0
+    spanning_tree.row_count.times do |row_index|
+      row_index.times do |column_index|
+        if spanning_tree[row_index, column_index] > 0
+          edge_count += 1
+        end
+      end
+    end
+    if edge_count == vertex_count-1
+      return spanning_tree
+    else
+      puts 'no minimal spanning tree found'
+    end
   end
 end

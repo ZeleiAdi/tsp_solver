@@ -13,7 +13,7 @@
   <component name="ChangesViewManager" flattened_view="true" show_ignored="false" />
   <component name="CoverageDataManager">
     <SUITE FILE_PATH="coverage/tsp_solver@Nearest_Neighbor.coverage" NAME="Nearest Neighbor Coverage Results" MODIFIED="1386063520885" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" MODULE_NAME="tsp_solver" />
-    <SUITE FILE_PATH="coverage/tsp_solver@AdjacencyListGraph.coverage" NAME="AdjacencyListGraph Coverage Results" MODIFIED="1386078873004" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" MODULE_NAME="tsp_solver" />
+    <SUITE FILE_PATH="coverage/tsp_solver@AdjacencyListGraph.coverage" NAME="AdjacencyListGraph Coverage Results" MODIFIED="1386152292454" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" MODULE_NAME="tsp_solver" />
   </component>
   <component name="CreatePatchCommitExecutor">
     <option name="PATCH_PATH" value="" />
@@ -30,7 +30,7 @@
       <file leaf-file-name="adjacencylistgraph.rb" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/lib/adjacencylistgraph.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="56" column="6" selection-start="950" selection-end="950" vertical-scroll-proportion="0.0" vertical-offset="817" max-vertical-offset="2550">
+            <state line="77" column="0" selection-start="1283" selection-end="1283" vertical-scroll-proportion="0.0" vertical-offset="2347" max-vertical-offset="2754">
               <folding />
             </state>
           </provider>
@@ -39,16 +39,7 @@
       <file leaf-file-name="adjacencylistgraph_spec.rb" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/spec/adjacencylistgraph_spec.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="76" column="23" selection-start="2211" selection-end="2211" vertical-scroll-proportion="0.6439791" vertical-offset="1046" max-vertical-offset="1428">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="graphfactory.rb" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/lib/graphfactory.rb">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="1" column="25" selection-start="66" selection-end="66" vertical-scroll-proportion="0.0" vertical-offset="510" max-vertical-offset="1054">
+            <state line="69" column="56" selection-start="1952" selection-end="1952" vertical-scroll-proportion="0.37346438" vertical-offset="1021" max-vertical-offset="1428">
               <folding />
             </state>
           </provider>
@@ -85,9 +76,9 @@
         <option value="$PROJECT_DIR$/spec/graphfactory_spec.rb" />
         <option value="$PROJECT_DIR$/spec/neareast_neighbor_spec.rb" />
         <option value="$PROJECT_DIR$/lib/matrix.rb" />
-        <option value="$PROJECT_DIR$/lib/adjacencylistgraph.rb" />
         <option value="$PROJECT_DIR$/lib/graphfactory.rb" />
         <option value="$PROJECT_DIR$/spec/adjacencylistgraph_spec.rb" />
+        <option value="$PROJECT_DIR$/lib/adjacencylistgraph.rb" />
       </list>
     </option>
   </component>
@@ -423,13 +414,13 @@
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3970346" sideWeight="0.55227274" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.24963397" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.34493193" sideWeight="0.22181553" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.34493193" sideWeight="0.22254759" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.34493193" sideWeight="0.7774524" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32994923" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32994923" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
     </layout>
@@ -451,6 +442,27 @@
     <breakpoint-manager />
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/lib/adjacencylistgraph.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="56" column="6" selection-start="950" selection-end="950" vertical-scroll-proportion="0.0" vertical-offset="817" max-vertical-offset="2550">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/spec/adjacencylistgraph_spec.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="76" column="23" selection-start="2211" selection-end="2211" vertical-scroll-proportion="0.0" vertical-offset="1292" max-vertical-offset="1428">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lib/graphfactory.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="1" column="25" selection-start="66" selection-end="66" vertical-scroll-proportion="0.0" vertical-offset="510" max-vertical-offset="1054">
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/lib/adjacencylistgraph.rb">
       <provider selected="true" editor-type-id="text-editor">
         <state line="142" column="5" selection-start="3219" selection-end="3219" vertical-scroll-proportion="0.0" vertical-offset="2150" max-vertical-offset="2533">
@@ -588,14 +600,14 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/lib/adjacencylistgraph.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="56" column="6" selection-start="950" selection-end="950" vertical-scroll-proportion="0.0" vertical-offset="817" max-vertical-offset="2550">
+        <state line="77" column="0" selection-start="1283" selection-end="1283" vertical-scroll-proportion="0.0" vertical-offset="2347" max-vertical-offset="2754">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/spec/adjacencylistgraph_spec.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="76" column="23" selection-start="2211" selection-end="2211" vertical-scroll-proportion="0.6439791" vertical-offset="1046" max-vertical-offset="1428">
+        <state line="69" column="56" selection-start="1952" selection-end="1952" vertical-scroll-proportion="0.37346438" vertical-offset="1021" max-vertical-offset="1428">
           <folding />
         </state>
       </provider>
