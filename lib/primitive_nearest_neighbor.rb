@@ -10,7 +10,7 @@ class PrimitiveNearestNeighbor
     @@path = []
 
     result = travel start
-    if (result == :finished)
+    if result == :finished
       @@path.each do |vertex|
         vertex.print
       end
@@ -24,16 +24,16 @@ class PrimitiveNearestNeighbor
     vertex.visit
     @@path << vertex
 
-    if (@@graph.all_vertices_visited?)
-      @@path.concat @@path.reverse
+    if @@graph.all_vertices_visited?
+      @@path.concat @@path-[@@path.last].reverse
       return :finished
     end
 
     next_stop = vertex.nearest_unvisited_neighbor
-    if (next_stop.nil?)
+    if next_stop.nil?
       vertex.flags[:dead_end] = true
       @@path.reverse.each do |step_back|
-        if (vertex != step_back) && (step_back.flags[:dead_end] != true)
+        if (vertex != step_back) && (!step_back.flags[:dead_end])
           next_stop = step_back
         end
       end
@@ -42,7 +42,6 @@ class PrimitiveNearestNeighbor
     if result == :finished
       return :finished
     elsif result == :dead_end
-
     end
   end
 end

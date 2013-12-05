@@ -35,7 +35,7 @@ describe 'My behaviour' do
   end
 
   it 'should return a complex Hamilton circle' do
-    size = 10
+    size = 20
     graph = GraphFactory.generate_graph(size)
     path = NearestNeighbor.run graph, graph.random_vertex
 

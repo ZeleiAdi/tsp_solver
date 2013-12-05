@@ -67,7 +67,7 @@ describe 'AdjacencyListGraph' do
   end
 
   it 'should return a minimum spanning tree from a random graph' do
-    matrix = GraphFactory.create_graph_in_matrix_form 10
+    matrix = GraphFactory.create_graph_in_matrix_form 8
     alg = AdjacencyListGraph.new
     spanning_tree = alg.build_minimal_spanning_tree matrix
     spanning_tree.print

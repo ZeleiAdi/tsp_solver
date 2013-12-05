@@ -1,4 +1,3 @@
-require_relative 'graph.rb'
 require_relative 'vertex'
 require_relative 'matrix'
 
@@ -18,31 +17,27 @@ class AdjacencyListGraph
     @vertices[rand(0...@vertices.size)]
   end
 
-  def add_vertex vertex
+  def add_vertex(vertex)
     @vertices << vertex
-  end
-
-  def shortest_edge_of vertex
-    vertex.sortest_edge
   end
 
   def breadth_first_search(vertex)
     vertex.visit
-    vertex.neighbors.each do |vertex|
-      unless vertex.visited?
-        vertex.visit
-        breadth_first_search vertex
+    vertex.neighbors.each do |neighbor|
+      unless neighbor.visited?
+        neighbor.visit
+        breadth_first_search neighbor
       end
     end
   end
 
-  def all_vertices_visited_except start
+  def all_vertices_visited_except(start)
     @vertices.each do |vertex|
-      if ((vertex != start) && (vertex.visited? == false))
-          return false
-        end
+      if (vertex != start) && (vertex.visited? == false)
+        return false
       end
-    return true
+    end
+    true
   end
 
   def all_vertices_visited?
@@ -51,7 +46,7 @@ class AdjacencyListGraph
         return false
       end
     end
-    return true
+    true
   end
 
   def connected?
@@ -61,7 +56,7 @@ class AdjacencyListGraph
         return false
       end
     end
-    return true
+    true
   end
 
   def clear_visit
@@ -81,7 +76,7 @@ class AdjacencyListGraph
   #it is not fortunate, but when c[i,j] has a value of 0, it means there is no edge between i and j
   #   therefore zero value has to be checked for
   #might return with nil
-  def build_minimal_spanning_tree matrix
+  def build_minimal_spanning_tree(matrix)
     infinity = 1000
 
     spanning_tree = Matrix.new matrix.row_count, matrix.column_count
@@ -90,20 +85,20 @@ class AdjacencyListGraph
     nearest_vertex = []
     min_weight = []
 
-    vertex_count.times{
+    vertex_count.times {
       nearest_vertex << infinity
       min_weight << infinity
     }
     #initialize
     vertex_count.times do |index|
       #tree starts from vertex0
-      if (index == 0)
+      if index == 0
         nearest_vertex[index] = infinity
         min_weight[index] = infinity
       else
         nearest_vertex[index] = 0
-        if matrix[index,0] > 0
-          min_weight[index] = matrix[index,0]
+        if matrix[index, 0] > 0
+          min_weight[index] = matrix[index, 0]
         else
           min_weight[index] = infinity
         end
@@ -111,12 +106,12 @@ class AdjacencyListGraph
     end
 
     spanning_tree_vertices_count = 1
-    while (spanning_tree_vertices_count != vertex_count) do
+    while spanning_tree_vertices_count != vertex_count do
       #search for minimum in min_weight
       min_value = infinity
       min_index = -1
       vertex_count.times do |index|
-        if (min_weight[index] < min_value)
+        if min_weight[index] < min_value
           min_value = min_weight[index]
           min_index = index
         end
@@ -134,7 +129,7 @@ class AdjacencyListGraph
       min_weight[k] = infinity
       #update arrays
       vertex_count.times do |index|
-        if (nearest_vertex[index] != infinity) && (matrix[k, index] < min_weight[index]) && (matrix[k,index] > 0)
+        if (nearest_vertex[index] != infinity) && (matrix[k, index] < min_weight[index]) && (matrix[k, index] > 0)
           nearest_vertex[index] = k
           min_weight[index] = matrix[k, index]
         end
@@ -149,7 +144,7 @@ class AdjacencyListGraph
       end
     end
     if edge_count == vertex_count-1
-      return spanning_tree
+      spanning_tree
     else
       puts 'no minimal spanning tree found'
     end

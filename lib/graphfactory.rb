@@ -2,8 +2,8 @@ require_relative 'adjacencylistgraph.rb'
 require_relative 'matrix'
 
 module GraphFactory
-  def self.create_graph_with(number_of_vertices, graph_type)
-    matrix = Matrix.new(number_of_vertices, number_of_vertices)
+  def self.create_graph_with(number_of_vertices)
+    Matrix.new(number_of_vertices, number_of_vertices)
   end
 
   def self.create_graph_in_matrix_form(number_of_vertices)
@@ -15,13 +15,13 @@ module GraphFactory
   def self.generate_graph(number_of_vertices)
     matrix = Matrix.new(number_of_vertices, number_of_vertices)
     fill_matrix matrix
-    alg = transform_matrix_into_graph matrix
+    transform_matrix_into_graph matrix
   end
 
   def self.fill_matrix (matrix)
     matrix.row_count.times do |row_index|
       row_index.times do |column_index|
-        if (rand(0...10) < 4)
+        if rand(0...10) < 4
           matrix[column_index, row_index] = matrix[row_index, column_index] = rand(1..50)
         end
       end
@@ -38,9 +38,8 @@ module GraphFactory
       vertices << vertex
     end
     matrix.row_count.times do |row_index|
-      vertex = Vertex.new
       matrix.row_count.times do |column_index|
-        if (matrix[row_index, column_index] != 0)
+        if matrix[row_index, column_index] != 0
           vertices[row_index].add_edge(Edge.new(vertices[row_index], vertices[column_index], matrix[row_index, column_index]))
         end
       end
@@ -49,9 +48,5 @@ module GraphFactory
       graph.add_vertex vertex
     end
     graph
-  end
-
-  def transform_vertices_into_matrix vertices
-
   end
 end

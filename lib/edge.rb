@@ -10,7 +10,7 @@ class Edge
 
   @travelled
 
-  def initialize vertex1, vertex2, weight
+  def initialize (vertex1, vertex2, weight)
     @vertex1 = vertex1
     @vertex2 = vertex2
     @weight = weight

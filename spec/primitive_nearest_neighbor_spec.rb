@@ -37,6 +37,6 @@ describe 'Primitive Nearest Neighbor' do
 
     path = PrimitiveNearestNeighbor.run graph, vertex2
 
-    expect(path.size).to be 6
+    expect(path.size).to be 15
   end
 end

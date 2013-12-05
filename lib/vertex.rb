@@ -23,11 +23,9 @@ class Vertex
 
   def nearest_unvisited_neighbor
     unvisited_edges = @edges.select {|edge| !edge.get_pair(self).visited?}
-    shortest_edge_to_unvisited_neighbor = unvisited_edges.min_by{|edge| edge.weight}
-    unless shortest_edge_to_unvisited_neighbor.nil?
-      return shortest_edge_to_unvisited_neighbor.get_pair(self)
-    else
-      return nil
+    shortest_unvisited_edge = unvisited_edges.min_by{|edge| edge.weight}
+    unless shortest_unvisited_edge.nil?
+      shortest_unvisited_edge.get_pair(self)
     end
   end
 
@@ -61,7 +59,7 @@ class Vertex
         return true
       end
     end
-    return false
+    false
   end
 
   def add_edge (edge)
@@ -80,18 +78,17 @@ class Vertex
     @visited
   end
 
-  def shortest_edge
-    min_weight = 0
-    min_edge
-    @edges.each do |edge|
-      if edge.weight < min_weight
-        min_edge = edge
-        min_weight = edge.weight
-      end
-    end
-  end
+  #def shortest_edge
+  #  min_weight = 0
+  #  @edges.each do |edge|
+  #    if edge.weight < min_weight
+  #      min_edge = edge
+  #      min_weight = edge.weight
+  #    end
+  #  end
+  #end
 
-  def bind vertex, edge_weight
+  def bind(vertex, edge_weight)
     edge = Edge.new self, vertex, edge_weight
     self.add_edge edge
     vertex.add_edge edge

@@ -22,6 +22,6 @@ describe 'My behaviour' do
     puts counter
   end
   it 'should generate a graph' do
-    adj = GraphFactory.generate_graph(10).print
+    GraphFactory.generate_graph(10).print
   end
 end

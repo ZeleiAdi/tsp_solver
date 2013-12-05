@@ -27,9 +27,7 @@ class Matrix
   end
 
   def define_row (row_index, values)
-    column_count.times do |column_index|
-      @elements[row_index] = values
-    end
+    @elements[row_index] = values
   end
 
   def print
