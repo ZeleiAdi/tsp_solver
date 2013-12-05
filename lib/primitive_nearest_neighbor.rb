@@ -31,11 +31,18 @@ class PrimitiveNearestNeighbor
 
     next_stop = vertex.nearest_unvisited_neighbor
     if (next_stop.nil?)
-      next_stop = @@path[@@path.size-2]
+      vertex.flags[:dead_end] = true
+      @@path.reverse.each do |step_back|
+        if (vertex != step_back) && (step_back.flags[:dead_end] != true)
+          next_stop = step_back
+        end
+      end
     end
     result = travel next_stop
     if result == :finished
       return :finished
+    elsif result == :dead_end
+
     end
   end
 end

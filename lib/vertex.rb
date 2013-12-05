@@ -1,26 +1,7 @@
 require_relative 'edge'
 
-class Flag
-  @truth_value
-
-  def initialize (truth_value = false)
-    @truth_value = truth_value
-  end
-
-  def switch
-    @value = !@value
-  end
-
-  def turn_on
-    @value = true
-  end
-
-  def turn_off
-    @value = false
-  end
-end
-
 class Vertex
+  attr_accessor :flags
   @edges
   @visited
   @@id_incr = 1
@@ -31,7 +12,7 @@ class Vertex
     @@id_incr += 1
     @edges = []
     @visited = false
-    @flags = [Flag.new, Flag.new]
+    @flags = {}
   end
 
   def neighbors
@@ -42,7 +23,6 @@ class Vertex
 
   def nearest_unvisited_neighbor
     unvisited_edges = @edges.select {|edge| !edge.get_pair(self).visited?}
-    puts unvisited_edges
     shortest_edge_to_unvisited_neighbor = unvisited_edges.min_by{|edge| edge.weight}
     unless shortest_edge_to_unvisited_neighbor.nil?
       return shortest_edge_to_unvisited_neighbor.get_pair(self)
