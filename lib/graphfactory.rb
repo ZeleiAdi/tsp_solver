@@ -21,7 +21,7 @@ module GraphFactory
   def self.fill_matrix (matrix)
     matrix.row_count.times do |row_index|
       row_index.times do |column_index|
-        if (rand(0...10) < 3)
+        if (rand(0...10) < 4)
           matrix[column_index, row_index] = matrix[row_index, column_index] = rand(1..50)
         end
       end

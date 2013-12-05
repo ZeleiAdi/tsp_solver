@@ -41,24 +41,19 @@ class Vertex
   end
 
   def nearest_unvisited_neighbor
-    min_edge_weight = 1000
-
-    nearest_neighbor = nil
-    @edges.each do |edge|
-      pair = edge.get_pair(self)
-      unless pair.visited?
-        if edge.weight < min_edge_weight
-          min_edge_weight
-          nearest_neighbor = pair
-        end
-      end
+    unvisited_edges = @edges.select {|edge| !edge.get_pair(self).visited?}
+    puts unvisited_edges
+    shortest_edge_to_unvisited_neighbor = unvisited_edges.min_by{|edge| edge.weight}
+    unless shortest_edge_to_unvisited_neighbor.nil?
+      return shortest_edge_to_unvisited_neighbor.get_pair(self)
+    else
+      return nil
     end
-    nearest_neighbor
   end
 
   def ordered_unvisited_neighbors
-    sorted_edges = @edges.sort_by do |edge|
-      edge.weight
+      sorted_edges = @edges.sort_by do |edge|
+        edge.weight
     end
     sorted_unvisited_vertices = []
     sorted_edges.each do |edge|
@@ -123,10 +118,13 @@ class Vertex
   end
 
   def print
-    @edges.each do |edge|
-      edge.print
-    end
+    puts @id
   end
 
+  #def print
+  #  @edges.each do |edge|
+  #    edge.print
+  #  end
+  #end
 end
 

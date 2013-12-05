@@ -1,12 +1,12 @@
 require 'rspec'
 require_relative '../lib/vertex'
 require_relative '../lib/adjacencylistgraph'
-require_relative '../lib/nearest_neighbor'
+require_relative '../lib/primitive_nearest_neighbor'
 require_relative '../lib/graphfactory'
 
-describe 'My behaviour' do
+describe 'Primitive Nearest Neighbor' do
 
-  it 'should return a Hamilton circle' do
+  it 'should return a salesman path' do
     vertex1 = Vertex.new
     vertex2 = Vertex.new
     vertex3 = Vertex.new
@@ -29,16 +29,8 @@ describe 'My behaviour' do
     graph << vertex4
     graph << vertex5
 
-    path = NearestNeighbor.run graph, vertex2
+    path = PrimitiveNearestNeighbor.run graph, vertex2
 
     expect(path.size).to be 6
-  end
-
-  it 'should return a complex Hamilton circle' do
-    size = 10
-    graph = GraphFactory.generate_graph(size)
-    path = NearestNeighbor.run graph, graph.random_vertex
-
-    expect(path.size).to be size+1
   end
 end

@@ -6,12 +6,14 @@ class NearestNeighbor
     @@graph = graph
     @@start = start
     @@path = []
-    @@path << start
 
     @@align = 0
 
     result = travel start
       if (result == :finished)
+        @@path.each do |vertex|
+          vertex.print
+        end
         return @@path
       end
     puts 'Path not found'
@@ -28,6 +30,7 @@ class NearestNeighbor
     @@path << vertex
 
     if ((vertex.neighbor? @@start) && (@@graph.all_vertices_visited?))
+      @@path << @@start
       puts "finished"
       return :finished
     end
