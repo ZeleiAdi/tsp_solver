@@ -24,6 +24,10 @@ class Edge
     (@vertices - [vertex])[0]
   end
 
+  def <=> (other)
+    @weight <=> other.weight
+  end
+
   def print
     puts "#{@vertex1.id} #{@vertex2.id} #{@weight}"
   end

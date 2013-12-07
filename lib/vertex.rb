@@ -25,6 +25,10 @@ class Vertex
     end
   end
 
+  def edges
+    @edges
+  end
+
   def nearest_unvisited_neighbor
     unvisited_edges = @edges.select {|edge| !edge.get_pair(self).visited?}
     shortest_unvisited_edge = unvisited_edges.min_by{|edge| edge.weight}

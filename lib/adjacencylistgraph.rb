@@ -13,6 +13,17 @@ class AdjacencyListGraph
     @vertices << vertex
   end
 
+  def edges
+    set_of_edges = SortedSet.new
+    @vertices.each do |vertex|
+      edges = vertex.edges
+      edges.each do |edge|
+        set_of_edges << edge
+      end
+    end
+    set_of_edges
+  end
+
   def random_vertex
     @vertices[rand(0...@vertices.size)]
   end
@@ -29,6 +40,27 @@ class AdjacencyListGraph
         breadth_first_search neighbor
       end
     end
+  end
+
+  def detect_cycle(vertex)
+    @path =[] if @path.nil?
+
+    if vertex.visited?
+      return :cycle
+    end
+
+    vertex.visit
+    puts vertex.id
+    children = vertex.neighbors
+    children.delete @path.last
+    @path << vertex
+    children.each do |vertex|
+      result = detect_cycle(vertex)
+      if result == :cycle
+        return :cycle
+      end
+    end
+    @path.pop
   end
 
   def all_vertices_visited_except(start)
@@ -59,6 +91,10 @@ class AdjacencyListGraph
     true
   end
 
+  def has_vertex_with_odd_degree
+    @vertices.any? {|vertex| vertex.degree.odd?}
+  end
+  
   def clear_visit
     @vertices.each do |vertex|
       vertex.unvisit

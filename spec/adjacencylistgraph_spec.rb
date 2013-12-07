@@ -66,14 +66,68 @@ describe 'AdjacencyListGraph' do
     puts ''
   end
 
-  it 'should return a minimum spanning tree from a random graph' do
-    matrix = GraphFactory.create_graph_in_matrix_form 8
-    alg = AdjacencyListGraph.new
-    spanning_tree = alg.build_minimal_spanning_tree matrix
-    spanning_tree.print
+  #it 'should return a minimum spanning tree from a random graph' do
+  #  matrix = GraphFactory.create_graph_in_matrix_form 8
+  #  alg = AdjacencyListGraph.new
+  #  spanning_tree = alg.build_minimal_spanning_tree matrix
+  #  spanning_tree.print
+  #
+  #  graph = GraphFactory.transform_matrix_into_graph spanning_tree
+  #  graph.breadth_first_search graph.random_vertex
+  #  expect(graph.connected?).to be true
+  #end
 
-    graph = GraphFactory.transform_matrix_into_graph spanning_tree
-    graph.breadth_first_search graph.random_vertex
-    expect(graph.connected?).to be true
+  it 'should check for any vertex with odd degree' do
+    alg = AdjacencyListGraph.new
+    vertex1 = Vertex.new
+    vertex2 = Vertex.new
+    vertex3 = Vertex.new
+    vertex4 = Vertex.new
+
+    vertex1.add_neighbor(vertex3, 10)
+    vertex1.add_neighbor(vertex4, 10)
+
+    alg.add_vertex(vertex1)
+    alg.add_vertex(vertex2)
+    alg.add_vertex(vertex3)
+    alg.add_vertex(vertex4)
+    expect(alg.has_vertex_with_odd_degree)
+
+    vertex3.add_neighbor(vertex4, 10)
+    expect(!alg.has_vertex_with_odd_degree)
+  end
+
+  it 'indicate if graph is not connected with DFS' do
+
+    vertex1 = Vertex.new
+    vertex2 = Vertex.new
+    vertex3 = Vertex.new
+    vertex4 = Vertex.new
+    vertex5 = Vertex.new
+    vertex6 = Vertex.new
+    vertex7 = Vertex.new
+
+    vertex1.add_neighbor vertex2, 10
+    vertex1.add_neighbor vertex5, 10
+    vertex2.add_neighbor vertex3, 10
+    vertex2.add_neighbor vertex4, 10
+    vertex5.add_neighbor vertex6, 10
+    vertex6.add_neighbor vertex7, 10
+
+    graph = AdjacencyListGraph.new
+    graph << vertex1
+    graph << vertex2
+    graph << vertex3
+    graph << vertex4
+    graph << vertex5
+    graph << vertex6
+    graph << vertex7
+
+    result = graph.detect_cycle(vertex1)
+
+    expect(result != :cycle)
+    vertex4.add_neighbor vertex5, 10
+
+    expect(result == :cycle)
   end
 end

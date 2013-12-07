@@ -7,7 +7,6 @@ class NearestNeighbor
     @@graph = graph
     @@start = start
     @@path = []
-
     @@align = 0
 
     result = travel start
