@@ -1,6 +1,7 @@
 require_relative 'adjacencylistgraph'
 require_relative 'vertex'
 class NearestNeighbor
+  @@debug = false
 
   def self.run graph, start
     @@graph = graph
@@ -22,10 +23,12 @@ class NearestNeighbor
 
   def self.travel vertex
     vertex.visit
-    @@align += 1
+    if @@debug
+      @@align += 1
 
-    @@align.times {print '   '}
-    puts vertex.id
+      @@align.times {print '   '}
+      puts vertex.id
+    end
 
     @@path << vertex
 
@@ -43,7 +46,9 @@ class NearestNeighbor
       end
     end
     vertex.unvisit
-    @@align -= 1
+    if @@debug
+      @@align -= 1
+    end
     @@path -= [vertex]
   end
 end

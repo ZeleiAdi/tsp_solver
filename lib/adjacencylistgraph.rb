@@ -65,6 +65,12 @@ class AdjacencyListGraph
     end
   end
 
+  def clear_flags
+    @vertices.each do |vertex|
+      vertex.clear_flags
+    end
+  end
+
   def print
     @vertices.each do |vertex|
       vertex.print

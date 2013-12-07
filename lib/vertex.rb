@@ -15,6 +15,10 @@ class Vertex
     @flags = {}
   end
 
+  def clear_flags
+    @flags.clear
+  end
+
   def neighbors
     @edges.map do |edge|
       edge.get_pair(self)
@@ -66,6 +70,10 @@ class Vertex
     @edges << edge
   end
 
+  def edge_to_neighbor vertex
+    edge = @edges.find {|edge| edge.get_pair self == vertex}
+  end
+
   def visit
     @visited = true
   end
@@ -78,16 +86,6 @@ class Vertex
     @visited
   end
 
-  #def shortest_edge
-  #  min_weight = 0
-  #  @edges.each do |edge|
-  #    if edge.weight < min_weight
-  #      min_edge = edge
-  #      min_weight = edge.weight
-  #    end
-  #  end
-  #end
-
   def bind(vertex, edge_weight)
     edge = Edge.new self, vertex, edge_weight
     self.add_edge edge
@@ -97,11 +95,5 @@ class Vertex
   def print
     puts @id
   end
-
-  #def print
-  #  @edges.each do |edge|
-  #    edge.print
-  #  end
-  #end
 end
 

@@ -1,15 +1,15 @@
 class Stopwatch
   @start_time
   @end_time
-  def start
+  def self.start
     @start_time = Time.now
   end
 
-  def stop
+  def self.stop
     @end_time = Time.now
   end
 
-  def elapsed_time
+  def self.elapsed_time
     @end_time - @start_time
   end
 end

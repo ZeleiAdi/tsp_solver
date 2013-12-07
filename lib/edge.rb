@@ -25,7 +25,7 @@ class Edge
   end
 
   def print
-    puts "#{@vertex1.__id__} #{@vertex2.__id__} #{@weight}"
+    puts "#{@vertex1.id} #{@vertex2.id} #{@weight}"
   end
 
 end

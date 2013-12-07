@@ -30,4 +30,18 @@ describe Vertex do
     expect(ordered_unvisited_neighbors[1]).to be vertex2
   end
 
+  it 'should return an edge between a specific neighbor' do
+    vertex1 = Vertex.new
+    vertex2 = Vertex.new
+    vertex3 = Vertex.new
+    vertex4 = Vertex.new
+
+    vertex1.add_neighbor vertex2, 9
+    vertex1.add_neighbor vertex3, 1
+    vertex1.add_neighbor vertex4, 5
+
+    edge = vertex1.edge_to_neighbor vertex2
+    expect(edge.weight).to be 9
+  end
+
 end
