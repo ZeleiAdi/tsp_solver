@@ -3,7 +3,6 @@ require_relative 'vertex'
 
 class PrimitiveNearestNeighbor
 
-
   def self.run graph, start
     @@graph = graph
     @@start = start
