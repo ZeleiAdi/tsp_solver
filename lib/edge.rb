@@ -2,6 +2,8 @@ require_relative 'vertex'
 
 class Edge
   attr_accessor :weight
+  attr_accessor :vertex1_id
+  attr_accessor :vertex2_id
 
   @vertex1
   @vertex2
@@ -14,6 +16,9 @@ class Edge
     @vertex1 = vertex1
     @vertex2 = vertex2
     @weight = weight
+
+    @vertex1_id = @vertex1.id
+    @vertex2_id = @vertex2.id
 
     @vertices = [vertex1, vertex2]
 

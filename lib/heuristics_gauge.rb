@@ -2,9 +2,11 @@ require_relative 'nearest_neighbor'
 require_relative 'primitive_nearest_neighbor'
 require_relative 'stopwatch'
 require_relative 'graphfactory'
+require_relative 'matrix'
 
 class HeuristicsGauge
   @@graph
+  @@matrix
   @@graph_size
   @@start
 
@@ -13,7 +15,7 @@ class HeuristicsGauge
   end
 
   def self.load_graph
-    @@graph = GraphFactory.generate_graph @@graph_size
+    @@graph, @@matrix = GraphFactory.generate_graph_and_matrix @@graph_size
     @@start = @@graph.random_vertex
   end
 
@@ -43,6 +45,17 @@ class HeuristicsGauge
         unless path.nil?
           sum = path_length path
           stops = path.size
+        end
+      when heuristics_name == :spanning_tree
+        spanning_matrix = @@graph.build_minimal_spanning_tree @@matrix
+        Stopwatch.stop
+        unless spanning_matrix.nil?
+          spanning_matrix.row_count do |row_index|
+            spanning_matrix.column_count do |column_index|
+              sum += spanning_matrix[row_index, column_index]
+              stops = spanning_matrix.row_count*2
+            end
+          end
         end
       else
         puts 'No such heuristic'

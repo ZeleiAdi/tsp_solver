@@ -18,6 +18,13 @@ module GraphFactory
     transform_matrix_into_graph matrix
   end
 
+  def self.generate_graph_and_matrix(number_of_vertices)
+    matrix = Matrix.new(number_of_vertices, number_of_vertices)
+    fill_matrix matrix
+    graph = transform_matrix_into_graph matrix
+    [graph, matrix]
+  end
+
   def self.fill_matrix (matrix)
     matrix.row_count.times do |row_index|
       row_index.times do |column_index|
