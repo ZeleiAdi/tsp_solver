@@ -1,7 +1,7 @@
 require_relative 'adjacencylistgraph'
 require_relative 'vertex'
 
-class IntelligentNearestNeighbor
+module IntelligentNearestNeighbor
   def self.run graph, start
     @@distance_table = {}
     @@path = []
@@ -9,18 +9,27 @@ class IntelligentNearestNeighbor
     @@start = start
 
     @@distance_table[start] = 0
+
     vertex = start.nearest_unvisited_neighbor
+
     result = travel vertex
     if result == :finished
-      puts 'First Phase Finished'
-      #@@distance_table.each_value do |value|
-      #  puts value
-      #end
+      # @@distance_table.each_value do |value|
+      #   puts value
+      # end
+
       @@graph.vertices.each do |vertex|
-        vertex.print
-        puts @@distance_table[vertex]
+        puts "#{vertex.id} ->#{@@distance_table[vertex]}"
       end
+
+      puts "#{start.id} ->#{@@distance_table[start]}"
+
+      @@path.each do |vertex|
+        puts vertex.id
+      end
+
       result = go_home @@path.last
+
       if result == :finished
         return @@path
       end
@@ -33,10 +42,6 @@ class IntelligentNearestNeighbor
     vertex.visit
     @@path << vertex
 
-    if @@graph.all_vertices_visited?
-      return :finished
-    end
-
     min = Float::INFINITY
     neighbors = vertex.neighbors
     neighbors.each do |neighbor|
@@ -46,6 +51,10 @@ class IntelligentNearestNeighbor
       end
     end
     @@distance_table[vertex] = min
+
+    if @@graph.all_vertices_visited?
+      return :finished
+    end
 
     next_stop = vertex.nearest_unvisited_neighbor
     if next_stop.nil?
@@ -74,7 +83,7 @@ class IntelligentNearestNeighbor
     neighbors.each do |neighbor|
       edge = vertex.edge_to_neighbor neighbor
       if (@@distance_table[neighbor] + edge.weight < min)
-        puts 'ahoy'
+        puts vertex.id
         min = @@distance_table[neighbor] + edge.weight
         min_neighbor = neighbor
       end

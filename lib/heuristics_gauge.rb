@@ -1,5 +1,6 @@
 require_relative 'nearest_neighbor'
 require_relative 'primitive_nearest_neighbor'
+require_relative 'intelligent_nearest_neighbor'
 require_relative 'stopwatch'
 require_relative 'graphfactory'
 require_relative 'matrix'
@@ -15,8 +16,11 @@ class HeuristicsGauge
   end
 
   def self.load_graph
+
     @@graph, @@matrix = GraphFactory.generate_graph_and_matrix @@graph_size
     @@start = @@graph.random_vertex
+    puts @@graph.connected?
+    :success
   end
 
   def self.path_length path
@@ -42,6 +46,13 @@ class HeuristicsGauge
       when heuristics_name == :primitive_nearest_neighbor
         path = PrimitiveNearestNeighbor.run @@graph, @@start
         Stopwatch.stop
+        unless path.nil?
+          sum = path_length path
+          stops = path.size
+        end
+      when heuristics_name == :intelligent_nearest_neighbor
+          path = IntelligentNearestNeighbor.run @@graph, @@start
+           Stopwatch.stop
         unless path.nil?
           sum = path_length path
           stops = path.size
