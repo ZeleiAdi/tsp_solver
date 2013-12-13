@@ -7,7 +7,7 @@ describe 'Build Minimal Spanning Tree' do
   it 'should return a minimum spanning tree from a random graph' do
     graph = nil
     10.times do
-      matrix = GraphFactory.create_graph_in_matrix_form 10
+      matrix = GraphFactory.create_graph_in_matrix_form 20
       graph = GraphFactory.transform_matrix_into_graph matrix
       puts graph.connected?
       spanning_tree = SpanningTree.build_minimal_spanning_tree matrix

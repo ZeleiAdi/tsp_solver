@@ -17,8 +17,8 @@
     <SUITE FILE_PATH="coverage/tsp_solver@Vertex_.coverage" NAME="Vertex  Coverage Results" MODIFIED="1386409238604" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="tsp_solver" />
     <SUITE FILE_PATH="coverage/tsp_solver@Intelligent_Nearest_Neighbor.coverage" NAME="Intelligent Nearest Neighbor Coverage Results" MODIFIED="1386968049957" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" MODULE_NAME="tsp_solver" />
     <SUITE FILE_PATH="coverage/tsp_solver@Heuristics_Gauge.coverage" NAME="Heuristics Gauge Coverage Results" MODIFIED="1386951317851" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" MODULE_NAME="tsp_solver" />
-    <SUITE FILE_PATH="coverage/tsp_solver@AdjacencyListGraph.coverage" NAME="AdjacencyListGraph Coverage Results" MODIFIED="1386426656995" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" MODULE_NAME="tsp_solver" />
-    <SUITE FILE_PATH="coverage/tsp_solver@Spanning_Tree.coverage" NAME="Spanning Tree Coverage Results" MODIFIED="1386962635451" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" MODULE_NAME="tsp_solver" />
+    <SUITE FILE_PATH="coverage/tsp_solver@AdjacencyListGraph.coverage" NAME="AdjacencyListGraph Coverage Results" MODIFIED="1386973295705" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" MODULE_NAME="tsp_solver" />
+    <SUITE FILE_PATH="coverage/tsp_solver@Spanning_Tree.coverage" NAME="Spanning Tree Coverage Results" MODIFIED="1386968761542" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" MODULE_NAME="tsp_solver" />
     <SUITE FILE_PATH="coverage/tsp_solver@GraphFactory.coverage" NAME="GraphFactory Coverage Results" MODIFIED="1386248504384" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" MODULE_NAME="tsp_solver" />
   </component>
   <component name="CreatePatchCommitExecutor">
@@ -33,19 +33,46 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="intelligent_nearest_neighbor.rb" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/lib/intelligent_nearest_neighbor.rb">
+      <file leaf-file-name="adjacencylistgraph.rb" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/lib/adjacencylistgraph.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="10" column="31" selection-start="241" selection-end="241" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1666">
+            <state line="59" column="5" selection-start="1077" selection-end="1077" vertical-scroll-proportion="0.0" vertical-offset="714" max-vertical-offset="2363">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="intelligent_nearest_neighbor_spec.rb" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/spec/intelligent_nearest_neighbor_spec.rb">
+      <file leaf-file-name="heuristics_gauge.rb" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/lib/heuristics_gauge.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="41" column="26" selection-start="1143" selection-end="1143" vertical-scroll-proportion="0.93048126" vertical-offset="349" max-vertical-offset="986">
+            <state line="73" column="68" selection-start="2287" selection-end="2287" vertical-scroll-proportion="0.3821839" vertical-offset="1108" max-vertical-offset="1581">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="primitive_nearest_neighbor.rb" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/lib/primitive_nearest_neighbor.rb">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="3" column="2" selection-start="65" selection-end="67" vertical-scroll-proportion="-1.9615384" vertical-offset="0" max-vertical-offset="884">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="adjacencylistgraph_spec.rb" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/spec/adjacencylistgraph_spec.rb">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="127" column="36" selection-start="3308" selection-end="3308" vertical-scroll-proportion="-6.1923075" vertical-offset="1998" max-vertical-offset="2346">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="vertex.rb" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/lib/vertex.rb">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="34" column="0" selection-start="569" selection-end="569" vertical-scroll-proportion="0.0" vertical-offset="119" max-vertical-offset="1853">
               <folding />
             </state>
           </provider>
@@ -86,14 +113,14 @@
         <option value="$PROJECT_DIR$/lib/graphfactory.rb" />
         <option value="$PROJECT_DIR$/spec/heuristics_gauge_spec.rb" />
         <option value="$PROJECT_DIR$/lib/primitive_nearest_neighbor.rb" />
-        <option value="$PROJECT_DIR$/lib/adjacencylistgraph.rb" />
-        <option value="$PROJECT_DIR$/spec/adjacencylistgraph_spec.rb" />
         <option value="$PROJECT_DIR$/spec/primitive_nearest_neighbor_spec.rb" />
         <option value="$PROJECT_DIR$/lib/spanning_tree.rb" />
-        <option value="$PROJECT_DIR$/spec/spanning_tree_spec.rb" />
-        <option value="$PROJECT_DIR$/lib/heuristics_gauge.rb" />
         <option value="$PROJECT_DIR$/lib/intelligent_nearest_neighbor.rb" />
         <option value="$PROJECT_DIR$/spec/intelligent_nearest_neighbor_spec.rb" />
+        <option value="$PROJECT_DIR$/spec/spanning_tree_spec.rb" />
+        <option value="$PROJECT_DIR$/lib/adjacencylistgraph.rb" />
+        <option value="$PROJECT_DIR$/spec/adjacencylistgraph_spec.rb" />
+        <option value="$PROJECT_DIR$/lib/heuristics_gauge.rb" />
       </list>
     </option>
   </component>
@@ -244,7 +271,7 @@
       <recent name="$PROJECT_DIR$/lib" />
     </key>
   </component>
-  <component name="RunManager" selected="RSpec.Intelligent Nearest Neighbor">
+  <component name="RunManager" selected="RSpec.AdjacencyListGraph">
     <configuration default="true" type="RSpecRunConfigurationType" factoryName="RSpec">
       <predefined_log_file id="RUBY_RSPEC" enabled="true" />
       <module name="" />
@@ -426,17 +453,17 @@
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32880846" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3294893" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32880846" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.2057101" sideWeight="0.66227347" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.39668176" sideWeight="0.55197656" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.39668176" sideWeight="0.55197656" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3438914" sideWeight="0.22254759" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.35746607" sideWeight="0.7774524" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32880846" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.39969835" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
@@ -716,13 +743,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/lib/primitive_nearest_neighbor.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="43" column="22" selection-start="964" selection-end="964" vertical-scroll-proportion="1.8075" vertical-offset="8" max-vertical-offset="884">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/spec/primitive_nearest_neighbor_spec.rb">
       <provider selected="true" editor-type-id="text-editor">
         <state line="42" column="40" selection-start="1151" selection-end="1151" vertical-scroll-proportion="1.785" vertical-offset="0" max-vertical-offset="952">
@@ -730,37 +750,9 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/spec/adjacencylistgraph_spec.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="47" column="5" selection-start="1334" selection-end="1334" vertical-scroll-proportion="1.3825" vertical-offset="246" max-vertical-offset="1836">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/lib/spanning_tree.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="22" column="7" selection-start="683" selection-end="683" vertical-scroll-proportion="0.8425" vertical-offset="37" max-vertical-offset="1836">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/lib/matrix.rb">
       <provider selected="true" editor-type-id="text-editor">
         <state line="29" column="4" selection-start="759" selection-end="759" vertical-scroll-proportion="1.2325" vertical-offset="0" max-vertical-offset="748">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/spec/spanning_tree_spec.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="18" column="5" selection-start="701" selection-end="701" vertical-scroll-proportion="0.765" vertical-offset="0" max-vertical-offset="765">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/lib/vertex.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="34" column="0" selection-start="569" selection-end="569" vertical-scroll-proportion="0.0" vertical-offset="454" max-vertical-offset="1853">
           <folding />
         </state>
       </provider>
@@ -775,30 +767,65 @@
         <state line="416" column="0" selection-start="15089" selection-end="15089" vertical-scroll-proportion="0.0" vertical-offset="6948" max-vertical-offset="9282" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/lib/adjacencylistgraph.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="74" column="6" selection-start="1301" selection-end="1301" vertical-scroll-proportion="0.0" vertical-offset="1134" max-vertical-offset="2074">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/lib/heuristics_gauge.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="32" column="7" selection-start="803" selection-end="803" vertical-scroll-proportion="-1.5075" vertical-offset="1147" max-vertical-offset="1547">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/lib/intelligent_nearest_neighbor.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="10" column="31" selection-start="241" selection-end="241" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1666">
+        <state line="10" column="31" selection-start="241" selection-end="241" vertical-scroll-proportion="0.45454547" vertical-offset="0" max-vertical-offset="1666">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/spec/intelligent_nearest_neighbor_spec.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="41" column="26" selection-start="1143" selection-end="1143" vertical-scroll-proportion="0.93048126" vertical-offset="349" max-vertical-offset="986">
+        <state line="17" column="0" selection-start="488" selection-end="488" vertical-scroll-proportion="0.0" vertical-offset="238" max-vertical-offset="969">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lib/spanning_tree.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="52" column="12" selection-start="1401" selection-end="1401" vertical-scroll-proportion="0.1275" vertical-offset="833" max-vertical-offset="1836">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/spec/spanning_tree_spec.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="8" column="6" selection-start="250" selection-end="250" vertical-scroll-proportion="0.34" vertical-offset="0" max-vertical-offset="765">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lib/vertex.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="34" column="0" selection-start="569" selection-end="569" vertical-scroll-proportion="0.0" vertical-offset="454" max-vertical-offset="1853">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/spec/adjacencylistgraph_spec.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="127" column="36" selection-start="3308" selection-end="3308" vertical-scroll-proportion="-6.1923075" vertical-offset="1998" max-vertical-offset="2346">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lib/adjacencylistgraph.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="59" column="5" selection-start="1077" selection-end="1077" vertical-scroll-proportion="0.0" vertical-offset="714" max-vertical-offset="2363">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lib/primitive_nearest_neighbor.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="3" column="2" selection-start="65" selection-end="67" vertical-scroll-proportion="-1.9615384" vertical-offset="0" max-vertical-offset="884">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lib/heuristics_gauge.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="73" column="68" selection-start="2287" selection-end="2287" vertical-scroll-proportion="0.3821839" vertical-offset="1108" max-vertical-offset="1581">
           <folding />
         </state>
       </provider>

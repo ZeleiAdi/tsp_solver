@@ -1,4 +1,3 @@
-require 'rspec'
 require_relative '../lib/adjacencylistgraph'
 require_relative '../lib/graphfactory'
 require_relative '../lib/matrix'
@@ -99,5 +98,36 @@ describe 'AdjacencyListGraph' do
     vertex4.add_neighbor vertex5, 10
 
     expect(result == :cycle)
+  end
+
+  it 'should provide a list of vertices by traversing the graph using DFS' do
+    vertex1 = Vertex.new
+    vertex2 = Vertex.new
+    vertex3 = Vertex.new
+    vertex4 = Vertex.new
+    vertex5 = Vertex.new
+    vertex6 = Vertex.new
+    vertex7 = Vertex.new
+
+    vertex1.add_neighbor vertex2, 10
+    vertex1.add_neighbor vertex5, 10
+    vertex2.add_neighbor vertex3, 10
+    vertex2.add_neighbor vertex4, 10
+    vertex5.add_neighbor vertex6, 10
+    vertex6.add_neighbor vertex7, 10
+
+    graph = AdjacencyListGraph.new
+    graph << vertex1
+    graph << vertex2
+    graph << vertex3
+    graph << vertex4
+    graph << vertex5
+    graph << vertex6
+    graph << vertex7
+
+    graph.depth_first_search vertex1
+    graph.dfs_path.each do |vertex|
+      vertex.print
+    end
   end
 end

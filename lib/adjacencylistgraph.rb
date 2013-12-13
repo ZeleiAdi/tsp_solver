@@ -4,9 +4,11 @@ require_relative 'matrix'
 class AdjacencyListGraph
 
   attr_accessor :vertices
+  attr_accessor :dfs_path
 
   def initialize
     @vertices = []
+    @dfs_path = []
   end
 
   def << (vertex)
@@ -38,6 +40,21 @@ class AdjacencyListGraph
       unless neighbor.visited?
         neighbor.visit
         breadth_first_search neighbor
+      end
+    end
+  end
+
+  def depth_first_search(vertex)
+    vertex.visit
+    @dfs_path << vertex
+    neighbors = vertex.neighbors
+    if neighbors.nil?
+      return
+    end
+    neighbors.each do |neighbor|
+      unless neighbor.visited?
+        depth_first_search neighbor
+        @dfs_path << vertex
       end
     end
   end

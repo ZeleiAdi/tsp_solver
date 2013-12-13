@@ -15,7 +15,6 @@ describe 'Intelligent Path Find' do
     vertex5 = Vertex.new
     vertex6 = Vertex.new
     vertex7 = Vertex.new
-    vertex8 = Vertex.new
 
     vertex1.add_neighbor vertex2, 9
     vertex1.add_neighbor vertex3, 2

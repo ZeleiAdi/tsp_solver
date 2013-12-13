@@ -1,6 +1,7 @@
 require_relative 'nearest_neighbor'
 require_relative 'primitive_nearest_neighbor'
 require_relative 'intelligent_nearest_neighbor'
+require_relative 'spanning_tree'
 require_relative 'stopwatch'
 require_relative 'graphfactory'
 require_relative 'matrix'
@@ -61,15 +62,16 @@ class HeuristicsGauge
           path.each { |vertex| vertex.print}
         end
       when heuristics_name == :spanning_tree
-        spanning_matrix = @@graph.build_minimal_spanning_tree @@matrix
+        spanning_matrix =  SpanningTree.build_minimal_spanning_tree @@matrix
         Stopwatch.stop
         unless spanning_matrix.nil?
-          spanning_matrix.row_count do |row_index|
-            spanning_matrix.column_count do |column_index|
-              sum += spanning_matrix[row_index, column_index]
-              stops = spanning_matrix.row_count*2
-            end
-          end
+          sum = SpanningTree.path_length spanning_matrix
+          stops = SpanningTree.number_of_stops spanning_matrix
+          #path
+          spanning_graph = GraphFactory.transform_matrix_into_graph spanning_matrix
+          spanning_graph.depth_first_search spanning_graph.random_vertex
+          path = spanning_graph.dfs_path
+          #dfs_path has to be cleared sometime... potential bug here
         end
       else
         puts 'No such heuristic'
