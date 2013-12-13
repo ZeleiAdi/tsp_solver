@@ -3,7 +3,7 @@ require_relative 'matrix'
 
 class AdjacencyListGraph
 
-  @vertices
+  attr_accessor :vertices
 
   def initialize
     @vertices = []
