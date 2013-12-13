@@ -36,19 +36,18 @@ describe 'Intelligent Path Find' do
     graph << vertex5
     graph << vertex6
     graph << vertex7
-    graph << vertex8
 
     path = IntelligentNearestNeighbor.run graph, vertex2
 
     expect(path.size < 15)
   end
 
-  #it 'should intelligently find a path from a random graph' do
-  #  1.times do
-  #    HeuristicsGauge.initialize 6
-  #    HeuristicsGauge.load_graph
-  #    time, path_found, path_length = HeuristicsGauge.heuristics_performance :intelligent_nearest_neighbor
-  #    puts "path: #{path_found}, length: #{path_length}"
-  #  end
-  #end
+  it 'should intelligently find a path from a random graph' do
+    1.times do
+      HeuristicsGauge.initialize 10
+      HeuristicsGauge.load_graph
+      time, path_found, path_length = HeuristicsGauge.heuristics_performance :intelligent_nearest_neighbor
+      puts "path: #{path_found}, length: #{path_length}"
+    end
+  end
 end

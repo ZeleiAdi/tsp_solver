@@ -9,7 +9,6 @@ module IntelligentNearestNeighbor
     @@start = start
 
     @@distance_table[start] = 0
-
     result = travel start
     if result == :finished
       @@graph.vertices.each do |vertex|
