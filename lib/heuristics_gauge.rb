@@ -16,10 +16,9 @@ class HeuristicsGauge
   end
 
   def self.load_graph
-
     @@graph, @@matrix = GraphFactory.generate_graph_and_matrix @@graph_size
     @@start = @@graph.random_vertex
-    puts @@graph.connected?
+    #puts @@graph.connected?
     :success
   end
 
@@ -56,6 +55,7 @@ class HeuristicsGauge
         unless path.nil?
           sum = path_length path
           stops = path.size
+          path.each { |vertex| vertex.print}
         end
       when heuristics_name == :spanning_tree
         spanning_matrix = @@graph.build_minimal_spanning_tree @@matrix

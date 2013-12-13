@@ -10,9 +10,10 @@ module IntelligentNearestNeighbor
 
     @@distance_table[start] = 0
 
-    vertex = start.nearest_unvisited_neighbor
+    #vertex = start.nearest_unvisited_neighbor
 
-    result = travel vertex
+    #result = travel vertex
+    result = travel start
     if result == :finished
       # @@distance_table.each_value do |value|
       #   puts value
@@ -31,6 +32,7 @@ module IntelligentNearestNeighbor
       result = go_home @@path.last
 
       if result == :finished
+        @@path.each { |vertex| vertex.print }
         return @@path
       end
     end
@@ -42,15 +44,17 @@ module IntelligentNearestNeighbor
     vertex.visit
     @@path << vertex
 
-    min = Float::INFINITY
-    neighbors = vertex.neighbors
-    neighbors.each do |neighbor|
-      edge = vertex.edge_to_neighbor neighbor
-      if (@@distance_table[neighbor] &&  edge.weight < min)
-        min = @@distance_table[neighbor] + edge.weight
+    if(@@distance_table[vertex].nil?)
+      min = Float::INFINITY
+      neighbors = vertex.neighbors
+      neighbors.each do |neighbor|
+        edge = vertex.edge_to_neighbor neighbor
+        if (@@distance_table[neighbor] &&  edge.weight < min)
+          min = @@distance_table[neighbor] + edge.weight
+        end
       end
+      @@distance_table[vertex] = min
     end
-    @@distance_table[vertex] = min
 
     if @@graph.all_vertices_visited?
       return :finished
@@ -69,6 +73,7 @@ module IntelligentNearestNeighbor
     if result == :finished
       return :finished
     elsif result == :dead_end
+      return :dead_end
     end
   end
 

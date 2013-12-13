@@ -41,6 +41,7 @@ class PrimitiveNearestNeighbor
     if result == :finished
       return :finished
     elsif result == :dead_end
+      return :dead_end
     end
   end
 end

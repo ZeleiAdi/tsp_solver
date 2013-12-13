@@ -1,8 +1,8 @@
-require 'rspec'
 require_relative '../lib/vertex'
 require_relative '../lib/adjacencylistgraph'
 require_relative '../lib/primitive_nearest_neighbor'
 require_relative '../lib/graphfactory'
+require_relative '../lib/heuristics_gauge'
 
 describe 'Primitive Nearest Neighbor' do
 
@@ -38,5 +38,14 @@ describe 'Primitive Nearest Neighbor' do
     path = PrimitiveNearestNeighbor.run graph, vertex2
 
     expect(path.size).to be 15
+  end
+
+  it 'should primitively but efficiently find a path from a random graph' do
+    10.times do
+      HeuristicsGauge.initialize 20
+      HeuristicsGauge.load_graph
+      time, path_found, path_length, stops = HeuristicsGauge.heuristics_performance :primitive_nearest_neighbor
+      puts "time: #{time}, path: #{path_found}, length: #{path_length}, number of stops: #{stops}"
+    end
   end
 end

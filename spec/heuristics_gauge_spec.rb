@@ -1,4 +1,4 @@
-require 'rspec'
+#require 'rspec'
 require_relative '../lib/heuristics_gauge'
 
 describe 'Performance Measure' do
@@ -15,5 +15,4 @@ describe 'Performance Measure' do
     expect(pnn_sum > nn_sum)
     expect((pnn_time < nn_time) && (solution == solution2))
   end
-
 end
