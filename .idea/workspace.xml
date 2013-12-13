@@ -15,10 +15,10 @@
     <SUITE FILE_PATH="coverage/tsp_solver@Primitive_Nearest_Neighbor.coverage" NAME="Primitive Nearest Neighbor Coverage Results" MODIFIED="1386960807487" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" MODULE_NAME="tsp_solver" />
     <SUITE FILE_PATH="coverage/tsp_solver@Vertex_.coverage" NAME="Vertex  Coverage Results" MODIFIED="1386409238604" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="tsp_solver" />
     <SUITE FILE_PATH="coverage/tsp_solver@Nearest_Neighbor.coverage" NAME="Nearest Neighbor Coverage Results" MODIFIED="1386248680482" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" MODULE_NAME="tsp_solver" />
-    <SUITE FILE_PATH="coverage/tsp_solver@Intelligent_Nearest_Neighbor.coverage" NAME="Intelligent Nearest Neighbor Coverage Results" MODIFIED="1386949937464" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" MODULE_NAME="tsp_solver" />
+    <SUITE FILE_PATH="coverage/tsp_solver@Intelligent_Nearest_Neighbor.coverage" NAME="Intelligent Nearest Neighbor Coverage Results" MODIFIED="1386965164596" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" MODULE_NAME="tsp_solver" />
     <SUITE FILE_PATH="coverage/tsp_solver@Heuristics_Gauge.coverage" NAME="Heuristics Gauge Coverage Results" MODIFIED="1386951317851" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" MODULE_NAME="tsp_solver" />
     <SUITE FILE_PATH="coverage/tsp_solver@AdjacencyListGraph.coverage" NAME="AdjacencyListGraph Coverage Results" MODIFIED="1386426656995" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" MODULE_NAME="tsp_solver" />
-    <SUITE FILE_PATH="coverage/tsp_solver@Spanning_Tree.coverage" NAME="Spanning Tree Coverage Results" MODIFIED="1386962213057" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" MODULE_NAME="tsp_solver" />
+    <SUITE FILE_PATH="coverage/tsp_solver@Spanning_Tree.coverage" NAME="Spanning Tree Coverage Results" MODIFIED="1386962635451" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" MODULE_NAME="tsp_solver" />
     <SUITE FILE_PATH="coverage/tsp_solver@GraphFactory.coverage" NAME="GraphFactory Coverage Results" MODIFIED="1386248504384" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" MODULE_NAME="tsp_solver" />
   </component>
   <component name="CreatePatchCommitExecutor">
@@ -33,10 +33,37 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="spanning_tree_spec.rb" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/spec/spanning_tree_spec.rb">
+      <file leaf-file-name="intelligent_nearest_neighbor.rb" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/lib/intelligent_nearest_neighbor.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="18" column="5" selection-start="701" selection-end="701" vertical-scroll-proportion="0.7225" vertical-offset="17" max-vertical-offset="765">
+            <state line="44" column="11" selection-start="1099" selection-end="1099" vertical-scroll-proportion="1.87" vertical-offset="0" max-vertical-offset="1683">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="example.rb" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/rspec-core-3.0.0.beta1/lib/rspec/core/example.rb">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="132" column="0" selection-start="4655" selection-end="4655" vertical-scroll-proportion="0.0" vertical-offset="2124" max-vertical-offset="5406">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="example_group.rb" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/rspec-core-3.0.0.beta1/lib/rspec/core/example_group.rb">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="416" column="0" selection-start="15089" selection-end="15089" vertical-scroll-proportion="0.0" vertical-offset="6948" max-vertical-offset="9282">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="vertex.rb" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/lib/vertex.rb">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="34" column="0" selection-start="569" selection-end="569" vertical-scroll-proportion="0.0" vertical-offset="454" max-vertical-offset="1853">
               <folding />
             </state>
           </provider>
@@ -45,7 +72,16 @@
       <file leaf-file-name="adjacencylistgraph.rb" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/lib/adjacencylistgraph.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="115" column="5" selection-start="1985" selection-end="1985" vertical-scroll-proportion="0.0" vertical-offset="1190" max-vertical-offset="2074">
+            <state line="74" column="6" selection-start="1301" selection-end="1301" vertical-scroll-proportion="0.0" vertical-offset="1134" max-vertical-offset="2074">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="intelligent_nearest_neighbor_spec.rb" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/spec/intelligent_nearest_neighbor_spec.rb">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="28" column="36" selection-start="874" selection-end="874" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1003">
               <folding />
             </state>
           </provider>
@@ -84,16 +120,16 @@
         <option value="$PROJECT_DIR$/lib/edge.rb" />
         <option value="$PROJECT_DIR$/lib/greedy.rb" />
         <option value="$PROJECT_DIR$/lib/graphfactory.rb" />
-        <option value="$PROJECT_DIR$/lib/intelligent_nearest_neighbor.rb" />
-        <option value="$PROJECT_DIR$/spec/intelligent_nearest_neighbor_spec.rb" />
         <option value="$PROJECT_DIR$/spec/heuristics_gauge_spec.rb" />
-        <option value="$PROJECT_DIR$/lib/heuristics_gauge.rb" />
         <option value="$PROJECT_DIR$/lib/primitive_nearest_neighbor.rb" />
         <option value="$PROJECT_DIR$/lib/adjacencylistgraph.rb" />
         <option value="$PROJECT_DIR$/spec/adjacencylistgraph_spec.rb" />
         <option value="$PROJECT_DIR$/spec/primitive_nearest_neighbor_spec.rb" />
         <option value="$PROJECT_DIR$/lib/spanning_tree.rb" />
         <option value="$PROJECT_DIR$/spec/spanning_tree_spec.rb" />
+        <option value="$PROJECT_DIR$/lib/heuristics_gauge.rb" />
+        <option value="$PROJECT_DIR$/lib/intelligent_nearest_neighbor.rb" />
+        <option value="$PROJECT_DIR$/spec/intelligent_nearest_neighbor_spec.rb" />
       </list>
     </option>
   </component>
@@ -244,7 +280,7 @@
       <recent name="$PROJECT_DIR$/lib" />
     </key>
   </component>
-  <component name="RunManager" selected="RSpec.Spanning Tree">
+  <component name="RunManager" selected="RSpec.Intelligent Nearest Neighbor">
     <configuration default="true" type="RSpecRunConfigurationType" factoryName="RSpec">
       <predefined_log_file id="RUBY_RSPEC" enabled="true" />
       <module name="" />
@@ -516,32 +552,15 @@
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" type="ruby-line">
-          <url>file://$PROJECT_DIR$/lib/intelligent_nearest_neighbor.rb</url>
-          <line>43</line>
-          <option name="timeStamp" value="5" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="ruby-line">
-          <url>file://$PROJECT_DIR$/lib/intelligent_nearest_neighbor.rb</url>
-          <line>59</line>
-          <option name="timeStamp" value="6" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="ruby-line">
           <url>file://$PROJECT_DIR$/lib/spanning_tree.rb</url>
           <line>19</line>
           <option name="timeStamp" value="7" />
         </line-breakpoint>
       </breakpoints>
-      <option name="time" value="9" />
+      <option name="time" value="15" />
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/lib/nearest_neighbor.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="31" column="68" selection-start="593" selection-end="593" vertical-scroll-proportion="0.0" vertical-offset="527" max-vertical-offset="918">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/lib/primitive_nearest_neighbor.rb">
       <provider selected="true" editor-type-id="text-editor">
         <state line="3" column="30" selection-start="95" selection-end="95" vertical-scroll-proportion="0.0" vertical-offset="51" max-vertical-offset="867">
@@ -749,35 +768,9 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/lib/vertex.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="44" column="10" selection-start="816" selection-end="822" vertical-scroll-proportion="0.66748166" vertical-offset="475" max-vertical-offset="1853">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/spec/intelligent_nearest_neighbor_spec.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="46" column="0" selection-start="1208" selection-end="1531" vertical-scroll-proportion="0.0" vertical-offset="628" max-vertical-offset="1037" />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/spec/heuristics_gauge_spec.rb">
       <provider selected="true" editor-type-id="text-editor">
         <state line="16" column="5" selection-start="788" selection-end="788" vertical-scroll-proportion="0.7101828" vertical-offset="0" max-vertical-offset="391" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/lib/intelligent_nearest_neighbor.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="43" column="0" selection-start="905" selection-end="905" vertical-scroll-proportion="0.0" vertical-offset="731" max-vertical-offset="1836">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/lib/heuristics_gauge.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="16" column="0" selection-start="344" selection-end="344" vertical-scroll-proportion="0.68" vertical-offset="0" max-vertical-offset="1496">
-          <folding />
-        </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/lib/nearest_neighbor.rb">
@@ -815,13 +808,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/rspec-core-3.0.0.beta1/lib/rspec/core/example.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="126" column="0" selection-start="4447" selection-end="4447" vertical-scroll-proportion="0.33240998" vertical-offset="2022" max-vertical-offset="5406">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/lib/spanning_tree.rb">
       <provider selected="true" editor-type-id="text-editor">
         <state line="22" column="7" selection-start="683" selection-end="683" vertical-scroll-proportion="0.8425" vertical-offset="37" max-vertical-offset="1836">
@@ -836,16 +822,58 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/lib/adjacencylistgraph.rb">
+    <entry file="file://$PROJECT_DIR$/spec/spanning_tree_spec.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="115" column="5" selection-start="1985" selection-end="1985" vertical-scroll-proportion="0.0" vertical-offset="1190" max-vertical-offset="2074">
+        <state line="18" column="5" selection-start="701" selection-end="701" vertical-scroll-proportion="0.765" vertical-offset="0" max-vertical-offset="765">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/spec/spanning_tree_spec.rb">
+    <entry file="file://$PROJECT_DIR$/lib/heuristics_gauge.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="18" column="5" selection-start="701" selection-end="701" vertical-scroll-proportion="0.7225" vertical-offset="17" max-vertical-offset="765">
+        <state line="32" column="7" selection-start="803" selection-end="803" vertical-scroll-proportion="-1.5075" vertical-offset="1147" max-vertical-offset="1547">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lib/vertex.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="34" column="0" selection-start="569" selection-end="569" vertical-scroll-proportion="0.0" vertical-offset="454" max-vertical-offset="1853">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/rspec-core-3.0.0.beta1/lib/rspec/core/example.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="132" column="0" selection-start="4655" selection-end="4655" vertical-scroll-proportion="0.0" vertical-offset="2124" max-vertical-offset="5406">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/rspec-core-3.0.0.beta1/lib/rspec/core/example_group.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="416" column="0" selection-start="15089" selection-end="15089" vertical-scroll-proportion="0.0" vertical-offset="6948" max-vertical-offset="9282">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lib/adjacencylistgraph.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="74" column="6" selection-start="1301" selection-end="1301" vertical-scroll-proportion="0.0" vertical-offset="1134" max-vertical-offset="2074">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/spec/intelligent_nearest_neighbor_spec.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="28" column="36" selection-start="874" selection-end="874" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1003">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lib/intelligent_nearest_neighbor.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="44" column="11" selection-start="1099" selection-end="1099" vertical-scroll-proportion="1.87" vertical-offset="0" max-vertical-offset="1683">
           <folding />
         </state>
       </provider>

@@ -18,7 +18,10 @@ class HeuristicsGauge
   def self.load_graph
     @@graph, @@matrix = GraphFactory.generate_graph_and_matrix @@graph_size
     @@start = @@graph.random_vertex
-    #puts @@graph.connected?
+    while !@@graph.connected?
+      @@graph, @@matrix = GraphFactory.generate_graph_and_matrix @@graph_size
+      @@start = @@graph.random_vertex
+    end
     :success
   end
 
@@ -27,7 +30,7 @@ class HeuristicsGauge
     path.each_cons(2) do |pair|
       edge = pair[0].edge_to_neighbor pair[1]
       sum += edge.weight
-      edge.print
+      #edge.print
     end
     sum
   end

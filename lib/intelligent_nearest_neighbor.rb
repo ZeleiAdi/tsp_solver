@@ -10,25 +10,16 @@ module IntelligentNearestNeighbor
 
     @@distance_table[start] = 0
 
-    #vertex = start.nearest_unvisited_neighbor
-
-    #result = travel vertex
     result = travel start
     if result == :finished
-      # @@distance_table.each_value do |value|
-      #   puts value
-      # end
-
       @@graph.vertices.each do |vertex|
         puts "#{vertex.id} ->#{@@distance_table[vertex]}"
       end
-
       puts "#{start.id} ->#{@@distance_table[start]}"
 
       @@path.each do |vertex|
         puts vertex.id
       end
-
       result = go_home @@path.last
 
       if result == :finished
