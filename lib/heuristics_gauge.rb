@@ -67,11 +67,11 @@ class HeuristicsGauge
         Stopwatch.stop
         unless spanning_matrix.nil?
           sum = SpanningTree.path_length spanning_matrix
-          stops = SpanningTree.number_of_stops spanning_matrix
           #path
           spanning_graph = GraphFactory.transform_matrix_into_graph spanning_matrix
           spanning_graph.depth_first_search spanning_graph.random_vertex
           @@path = spanning_graph.dfs_path
+          stops = spanning_graph.dfs_path.size
           #dfs_path has to be cleared sometime... potential bug here
         end
       else
@@ -83,7 +83,7 @@ class HeuristicsGauge
     if @@path.nil?
       return [Stopwatch.elapsed_time, :path_not_found]
     end
-    path_matrix = transform_path_into_matrix @@graph, @@path
+    path_matrix = transform_path_into_matrix
     [Stopwatch.elapsed_time, :path_found, sum, stops, path_matrix, @@matrix]
   end
 
