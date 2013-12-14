@@ -36,7 +36,7 @@
       <file leaf-file-name="heuristics_gauge.rb" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/lib/heuristics_gauge.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="103" column="18" selection-start="3087" selection-end="3087" vertical-scroll-proportion="0.72282606" vertical-offset="1485" max-vertical-offset="1887">
+            <state line="85" column="60" selection-start="2602" selection-end="2602" vertical-scroll-proportion="0.86141306" vertical-offset="1128" max-vertical-offset="1904">
               <folding />
             </state>
           </provider>
@@ -82,9 +82,9 @@
         <option value="$PROJECT_DIR$/spec/graphfactory_spec.rb" />
         <option value="$PROJECT_DIR$/lib/adjacencylistgraph.rb" />
         <option value="$PROJECT_DIR$/lib/vertex.rb" />
-        <option value="$PROJECT_DIR$/lib/heuristics_gauge.rb" />
         <option value="$PROJECT_DIR$/spec/heuristics_gauge_spec.rb" />
         <option value="$PROJECT_DIR$/lib/intelligent_nearest_neighbor.rb" />
+        <option value="$PROJECT_DIR$/lib/heuristics_gauge.rb" />
       </list>
     </option>
   </component>
@@ -795,7 +795,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/lib/heuristics_gauge.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="103" column="18" selection-start="3087" selection-end="3087" vertical-scroll-proportion="0.72282606" vertical-offset="1485" max-vertical-offset="1887">
+        <state line="85" column="60" selection-start="2602" selection-end="2602" vertical-scroll-proportion="0.86141306" vertical-offset="1128" max-vertical-offset="1904">
           <folding />
         </state>
       </provider>

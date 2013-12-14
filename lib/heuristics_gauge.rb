@@ -83,7 +83,8 @@ class HeuristicsGauge
     if @@path.nil?
       return [Stopwatch.elapsed_time, :path_not_found]
     end
-    [Stopwatch.elapsed_time, :path_found, sum, stops]
+    path_matrix = transform_path_into_matrix @@graph, @@path
+    [Stopwatch.elapsed_time, :path_found, sum, stops, path_matrix, @@matrix]
   end
 
   def self.transform_path_into_matrix
