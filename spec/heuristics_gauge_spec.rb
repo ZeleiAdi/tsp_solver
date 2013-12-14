@@ -15,4 +15,17 @@ describe 'Performance Measure' do
     expect(pnn_sum > nn_sum)
     expect((pnn_time < nn_time) && (solution == solution2))
   end
+
+  it 'should generate a matrix from a path' do
+    HeuristicsGauge.initialize 5
+    HeuristicsGauge.load_graph
+    HeuristicsGauge.heuristics_performance :primitive_nearest_neighbor
+    path_matrix = HeuristicsGauge.transform_path_into_matrix
+    puts 'path:'
+    HeuristicsGauge.show_path
+    puts 'matrix'
+    HeuristicsGauge.show_matrix
+    puts 'path_matrix'
+    path_matrix.print
+  end
 end

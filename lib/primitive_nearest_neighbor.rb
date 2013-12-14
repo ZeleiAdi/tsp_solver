@@ -24,7 +24,7 @@ class PrimitiveNearestNeighbor
     @@path << vertex
 
     if @@graph.all_vertices_visited?
-      @@path.concat @@path-[@@path.last].reverse
+      @@path.concat (@@path-[@@path.last]).reverse
       return :finished
     end
 
@@ -34,6 +34,7 @@ class PrimitiveNearestNeighbor
       @@path.reverse.each do |step_back|
         if (vertex != step_back) && (!step_back.flags[:dead_end])
           next_stop = step_back
+          break
         end
       end
     end

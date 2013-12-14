@@ -56,6 +56,7 @@ module IntelligentNearestNeighbor
       @@path.reverse.each do |step_back|
         if (vertex != step_back) && (!step_back.flags[:dead_end])
           next_stop = step_back
+          break
         end
       end
     end

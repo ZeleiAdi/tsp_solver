@@ -129,6 +129,10 @@ class AdjacencyListGraph
   def print
     @vertices.each do |vertex|
       vertex.print
+      puts 'has edges:'
+      vertex.edges.each do |edge|
+        edge.print
+      end
     end
   end
 end

@@ -14,6 +14,7 @@ describe 'Primitive Nearest Neighbor' do
     vertex5 = Vertex.new
     vertex6 = Vertex.new
     vertex7 = Vertex.new
+    vertex8 = Vertex.new
 
     vertex1.add_neighbor vertex2, 9
     vertex1.add_neighbor vertex3, 2
@@ -25,6 +26,7 @@ describe 'Primitive Nearest Neighbor' do
     vertex3.add_neighbor vertex4, 9
     vertex4.add_neighbor vertex5, 6
     vertex6.add_neighbor vertex7, 10
+    vertex7.add_neighbor vertex8, 4
 
     graph = AdjacencyListGraph.new
     graph << vertex1
@@ -37,15 +39,15 @@ describe 'Primitive Nearest Neighbor' do
 
     path = PrimitiveNearestNeighbor.run graph, vertex2
 
-    expect(path.size).to be 15
+    expect(path.size).to be 21
   end
 
-  it 'should primitively but efficiently find a path from a random graph' do
-    10.times do
-      HeuristicsGauge.initialize 20
-      HeuristicsGauge.load_graph
-      time, path_found, path_length, stops = HeuristicsGauge.heuristics_performance :primitive_nearest_neighbor
-      puts "time: #{time}, path: #{path_found}, length: #{path_length}, number of stops: #{stops}"
-    end
-  end
+  #it 'should primitively but efficiently find a path from a random graph' do
+  #  10.times do
+  #    HeuristicsGauge.initialize 20
+  #    HeuristicsGauge.load_graph
+  #    time, path_found, path_length, stops = HeuristicsGauge.heuristics_performance :primitive_nearest_neighbor
+  #    puts "time: #{time}, path: #{path_found}, length: #{path_length}, number of stops: #{stops}"
+  #  end
+  #end
 end

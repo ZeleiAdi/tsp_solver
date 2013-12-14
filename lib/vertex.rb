@@ -75,7 +75,8 @@ class Vertex
   end
 
   def edge_to_neighbor vertex
-    edge = @edges.find {|edge| edge.get_pair self == vertex}
+    edge = @edges.find {|edge| edge.get_pair(self) == vertex}
+    edge
   end
 
   def visit
